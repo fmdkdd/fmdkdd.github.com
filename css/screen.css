@@ -1,0 +1,274 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Common elements
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body {
+	width: 800px;
+	margin: 0 auto;
+	margin-bottom: .5em;
+
+	color: #444;
+	background-color: #efefe6;
+	font-size: 16.4px;
+	font-family: "PT Serif", "Bitstream Charter", Georgia, serif;
+	line-height: 1.5;
+}
+
+body > header {
+	margin-bottom: 2.5em;
+	overflow: hidden;
+	padding-left: .5em;
+}
+
+body > header > h1 > a {
+	float: left;
+	display: block;
+	margin-right: 1em;
+	padding-top: .2em;
+
+	color: #d60;
+	font-family: "DejaVu Sans", sans-serif;
+	font-size: large;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: #dcb 1px 1px 1px;
+}
+
+nav#top_menu {
+	overflow: hidden;
+}
+
+nav#top_menu ul {
+	list-style-type: none;
+}
+
+nav#top_menu ul li {
+	float: left;
+}
+
+nav#top_menu ul li a {
+	display: block;
+	margin-right: 4px;
+	padding: .5em 2.5em;
+
+	color: white;
+	background-color: #09b;
+	background-image: url("/img/tile.png");
+	background-repeat: repeat;
+	border-radius: 0 0 1px 1px;
+
+	font-family: "DejaVu Sans", sans-serif;
+	font-size: small;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 1px 1px 3px #888;
+}
+
+nav#top_menu ul li a:hover,
+nav#top_menu ul li a:focus {
+	background-color: #d60;
+}
+
+body > div.content {
+	width: 45em;
+	padding-left: .5em;
+}
+
+body > div.content a {
+	color: #357;
+
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+body > div.content h2 a,
+body > div.content h3 a,
+body > div.content h4 a,
+body > div.content h5 a,
+body > div.content h6 a {
+	border-bottom: none;
+}
+
+body > div.content h2 a:hover,
+body > div.content h3 a:hover,
+body > div.content h4 a:hover,
+body > div.content h5 a:hover,
+body > div.content h6 a:hover {
+	border-bottom: 1px dotted;
+}
+
+body > div.content h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #357;
+	text-shadow: #ccc 1px 1px 2px;
+}
+
+body > div.content h3, h4, h5, h6 {
+	font-variant: small-caps;
+
+	margin-top: 1em;
+}
+
+div.content p {
+	margin-bottom: 1em;
+}
+
+div.content li {
+	margin-left: 1em;
+	margin-bottom: .5em;
+
+	list-style-position: inline;
+	list-style-type: none;
+}
+
+div.content li:before {
+	content: '•';
+	color: #09b;
+
+	margin-left: -1em;
+	margin-right: .5em;
+}
+
+body > footer {
+	clear: both;
+	margin-top: 3em;
+
+	color: #aaa;
+	text-align: center;
+}
+
+body > footer span {
+	font-size: large;
+	margin-left: .2em;
+	margin-right: .2em;
+}
+
+body > footer a {
+	color: #357;
+
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Article
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+article header {
+	margin-bottom: 1.5em;
+}
+
+article header time {
+	color: #aaa;
+
+	font-size: medium;
+}
+
+article div.content h3 {
+	margin-bottom: .5em;
+}
+
+.highlight, article div.content code {
+	font-family: "DejaVu Sans Mono", monospace;
+	font-size: 14px;
+}
+
+div.content > p > code {
+	padding: .1em .3em 0 .3em;
+
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	color: #666;
+	background-color: #fafaf6;
+}
+
+.highlight {
+	margin-bottom: 1em;
+	padding: .5em;
+
+	border: 1px solid #93a1a1;
+	border-radius: 2px;
+
+	background-color: #fdf6e3;
+}
+
+article div.content blockquote {
+	margin-left: 2em;
+
+	color: #666;
+}
+
+article div.content img.inset {
+	display: block;
+	float: right;
+	margin: 1em 0 1em 1em;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Archives
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+nav#archives ul li {
+	margin-left: 0;
+	margin-bottom: .25em;
+}
+
+nav#archives ul li:before {
+	content: none;
+
+	margin-left: 0;
+	margin-right: 0;
+}
+
+nav#archives ul time {
+	margin-right: .5em;
+	text-align: right;
+
+	color: #aaa;
+}
+
+nav#archives h2 {
+	position: relative;
+
+	margin-bottom: .5em;
+}
+
+nav#archives h2 a {
+	border: none;
+	position: absolute;
+	right: 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Projects
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+div.content h2#projects {
+	margin-bottom: .5em;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * About
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+div.content h2#about {
+	margin-bottom: .5em;
+}
+
+img[alt='My face'] {
+	float: right;
+	margin-top: .5em;
+	margin-left: 2em;
+	margin-bottom: 2em;
+	width: 200px;
+}

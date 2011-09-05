@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog
+---
+
+{% assign first_post = site.posts.first %}
+
+<article>
+  <header>
+    <h2><a href={{ first_post.url }}>{{ first_post.title }}</a></h2>
+    <time datetime="{{ first_post.date | date: "%Y-%m-%d" }}"  pubdate>{{ first_post.date | date_to_long_string }}</time>
+  </header>
+
+  <div class="content">
+    {{ first_post.content }}
+  </div>
+</article>

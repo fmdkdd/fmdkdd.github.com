@@ -1,0 +1,16 @@
+---
+layout: default
+title: Archives
+---
+
+<nav id="archives">
+  <h2>Archives <a href="/atom.xml"><img src="/img/feed.png" alt="RSS feed icon" title="Subscribe to RSS feed"/></a></h2>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>{{ post.date | date_to_string }}</time>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
