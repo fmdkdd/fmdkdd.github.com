@@ -179,8 +179,8 @@ article div.content h3 {
 }
 
 .highlight, article div.content code {
-	font-family: "DejaVu Sans Mono", monospace;
-	font-size: 14px;
+	font-family: "Ubuntu Mono", "Inconsolata", monospace;
+	font-size: 16px;
 }
 
 div.content > p > code {
