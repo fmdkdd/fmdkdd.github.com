@@ -5,7 +5,7 @@ title: Notes On A Thesis Defense
 
 Tuesday was a very special day for my friend Karim.  He defended his
 thesis.  After nearly five years of work, during which much teases and
-jokes were made about his thesis' pace (three years is the norm here),
+jokes were made about his thesis pace (three years is the norm here),
 he finally finished his dissertation and defended successfully.
 
 It was also a very interesting afternoon for me, as I got to watch and
@@ -32,9 +32,10 @@ be ugly, but at least it's not distracting.
 
 At one point, Karim showed us one of his algorithms on one slide.  An
 entire, forty-something lines algorithm on just one slide.  In a talk,
-a slide stays between one and two minutes on screen.  I can't _grok_ a
-forty lines algorithm in two minutes.  Nevertheless, I am able to get
-the gist of it if you highlight the relevant parts, as Karim did.
+a slide stays between one and two minutes on screen.  I can't
+[_grok_][grok] a forty lines algorithm in two minutes.  Nevertheless,
+I am able to get the gist of it if you highlight the relevant parts,
+as Karim did.
 
 Still, I would have preferred a high-level description of the
 algorithm rather than the whole thing.  I can always check his
@@ -75,5 +76,6 @@ teaching and giving presentations.
 
 [Beamer]: https://bitbucket.org/rivanvx/beamer/wiki/Home
 [Warsaw theme]: http://www.informatik.uni-freiburg.de/~frank/ENG/beamer/example/Beamer-class-example8-Warsaw.pdf
+[grok]: https://en.wikipedia.org/wiki/Grok#In_computer_programmer_culture
 [olin]: http://www.ccs.neu.edu/home/shivers/diss-advice.html
 [rota]: http://www.math.osu.edu/~nevai/MYMATH/rota_ams_notices_01_97.html
