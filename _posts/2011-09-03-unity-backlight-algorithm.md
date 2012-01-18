@@ -56,8 +56,8 @@ the entire function:
 
 {% highlight c++ %}
 void LauncherIcon::ColorForIcon (GdkPixbuf *pixbuf,
-                                 nux::Color &amp;background,
-                                 nux::Color &amp;glow)
+                                 nux::Color &background,
+                                 nux::Color &glow)
 {
   unsigned int width = gdk_pixbuf_get_width (pixbuf);
   unsigned int height = gdk_pixbuf_get_height (pixbuf);
