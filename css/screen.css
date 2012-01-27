@@ -181,6 +181,7 @@ article div.content h3 {
 
 .highlight, article div.content code {
 	font-family: "Ubuntu Mono", "Inconsolata", monospace;
+	overflow: auto;
 }
 
 div.content > p > code {
