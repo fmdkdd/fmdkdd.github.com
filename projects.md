@@ -5,9 +5,9 @@ title: Projects
 
 ## Projects
 
-+ [Spacewar][], a multiplayer space shooter made for HTML5 browsers.
++ [Sparkets][], a multiplayer space shooter made for HTML5 browsers.
 + [Lectures notes][] taken during my Master of Computer Science at the
 University of Le Havre, in French.
 
-[Spacewar]: http://www.github.com/fmdkdd/spacewar
+[Sparkets]: http://www.github.com/fmdkdd/sparkets
 [Lectures Notes]: http://fmdkdd.free.fr/
