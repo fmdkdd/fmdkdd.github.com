@@ -133,8 +133,6 @@ div.content p {
 div.content li {
 	margin-left: 1em;
 	margin-bottom: .5em;
-
-	list-style-position: inline;
 	list-style-type: none;
 }
 
