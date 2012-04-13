@@ -67,6 +67,8 @@ nav#top_menu ul li {
 	background-color: #09b;
 	background-image: url("/img/tile.png");
 	background-repeat: repeat;
+
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 	border-radius: 0 0 .1em .1em;
 
 	-moz-transition: background-color 300ms ease-out;
