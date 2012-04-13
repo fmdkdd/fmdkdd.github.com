@@ -68,6 +68,10 @@ nav#top_menu ul li {
 	background-image: url("/img/tile.png");
 	background-repeat: repeat;
 	border-radius: 0 0 .1em .1em;
+
+	-moz-transition: background-color 300ms ease-out;
+	-webkit-transition: background-color 300ms ease-out;
+	-o-transition: background-color 300ms ease-out;
 }
 
 nav#top_menu ul li a {
@@ -83,7 +87,17 @@ nav#top_menu ul li a {
 
 nav#top_menu ul li:hover,
 nav#top_menu ul li:focus {
-	background-color: #d60;
+	background-color: #00aaea;
+
+	-moz-transition: background-color 300ms ease-out;
+	-webkit-transition: background-color 300ms ease-out;
+	-o-transition: background-color 300ms ease-out;
+}
+
+nav#top_menu ul li.active {
+	background-image: -moz-linear-gradient(left, #d60 5px, rgba(251,132,0,0) 8px), url("/img/tile.png");
+	background-image: -webkit-linear-gradient(left, #d60 5px, rgba(251,132,0,0) 8px), url("/img/tile.png");
+	background-image: -o-linear-gradient(left, #d60 5px, rgba(251,132,0,0) 8px), url("/img/tile.png");
 }
 
 body > div.content {

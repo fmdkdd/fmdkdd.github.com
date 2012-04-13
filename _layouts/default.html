@@ -21,10 +21,10 @@
       <h1><a href="/">fmdkdd</a></h1>
       <nav id="top_menu">
         <ul>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/archives.html">Archives</a></li>
-          <li><a href="/about.html">About</a></li>
+          <li{% if page.title == 'Blog' %} class="active"{% endif %}><a href="/">Blog</a></li>
+          <li{% if page.title == 'Projects' %} class="active"{% endif %}><a href="/projects.html">Projects</a></li>
+          <li{% if page.title == 'Archives' %} class="active"{% endif %}><a href="/archives.html">Archives</a></li>
+          <li{% if page.title == 'About' %} class="active"{% endif %}><a href="/about.html">About</a></li>
         </ul>
       </nav>
     </header>
