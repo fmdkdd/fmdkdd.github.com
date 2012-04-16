@@ -224,6 +224,7 @@ div.content > p > code {
 
 article div.content blockquote {
 	margin-left: 1.5em;
+	margin-right: 1.5em;
 
 	color: #666;
 }
