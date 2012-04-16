@@ -144,6 +144,7 @@ body > div.content h3, h4, h5, h6 {
 
 div.content p {
 	margin-bottom: 1em;
+	text-align: justify;
 }
 
 div.content li {
