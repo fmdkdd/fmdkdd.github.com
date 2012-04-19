@@ -24,7 +24,7 @@ to question the default [Warsaw theme][].  The blue and black color
 scheme has become as tiring as Times New Roman for me, and I cringe
 every time I see it. And I cringed when Karim launched his talk.
 
-However, Karim quickly made me forgot the atrocious theme after two
+However, Karim quickly made me forget the atrocious theme after two
 minutes or so, because the _content_ was interesting.  The theme may
 be ugly, but at least it's not distracting.
 
