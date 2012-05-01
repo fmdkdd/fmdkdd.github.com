@@ -10,12 +10,12 @@ title: About
 I'm a French problem solver who loves to learn, in order to solve
 more.
 
-I'm interested in most topics of computer science: programming,
-languages, algorithms, structures, idioms, tricks.  When I'm not
-reading a book or a web article on one of these topics, I'm most
-likely building something to scratch an itch, or just tinkering.  Or
-resting.  I do that too.  Beside walking, I also enjoy most forms of
-modern entertainment: music, cinema, literature and gaming.
+I'm interested in the following subset topics of computer science:
+programming, languages, algorithms, structures, idioms, tricks.  When
+I'm not reading a book or a web article on one of these topics, I'm
+most likely building something to scratch an itch, or just tinkering.
+Or resting.  I do that too.  Beside walking, I also enjoy most forms
+of modern entertainment: music, cinema, literature and gaming.
 
 I'm a strong proponent of free software and open knowledge.  As a
 testimony to that, you are free to browse, modify and reuse the
