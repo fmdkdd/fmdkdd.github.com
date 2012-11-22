@@ -108,10 +108,14 @@ body > div.content {
 }
 
 body > div.content a {
-	color: #357;
+	color: #3a3a3a;
 
 	text-decoration: none;
 	border-bottom: 1px dotted;
+}
+
+body > div.content a:hover {
+    color: #357;
 }
 
 body > div.content h2 a,
