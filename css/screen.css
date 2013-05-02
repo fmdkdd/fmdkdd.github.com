@@ -123,6 +123,7 @@ body > div.content h3 a,
 body > div.content h4 a,
 body > div.content h5 a,
 body > div.content h6 a {
+   color: #357;
 	border-bottom: none;
 }
 
