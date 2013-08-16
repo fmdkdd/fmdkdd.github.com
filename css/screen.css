@@ -297,10 +297,17 @@ pre {
 }
 
 article div.content blockquote {
-	margin-left: 1.5em;
-	margin-right: 1.5em;
+	margin-left: 3em;
 
 	color: #666;
+}
+
+article div.content blockquote:before {
+	content: "\201C";
+	font-size: 50pt;
+	margin-left: -35pt;
+	margin-top: -15pt;
+	float: left;
 }
 
 article div.content img.inset {
