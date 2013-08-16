@@ -10,6 +10,56 @@
 	padding: 0;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Flexible layout
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body > header {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-direction: row;
+	-webkit-flex-direction: row;
+
+	-webkit-flex-wrap: wrap;
+
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+#top_menu {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+
+/** Gradually drop nav menu text in favor of icons **/
+
+@media (max-width: 370px) {
+	#top_menu li:nth-child(1) .label {
+		display: none;
+	}
+}
+
+@media (max-width: 460px) {
+	#top_menu li:nth-child(2) .label {
+		display: none;
+	}
+}
+
+@media (max-width: 540px) {
+	#top_menu li:nth-child(3) .label {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	#top_menu li:nth-child(4) .label {
+		display: none;
+	}
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * Common elements
@@ -34,7 +84,6 @@ body > header {
 }
 
 body > header > h1 {
-	float: left;
 	margin-right: 1em;
 	margin-bottom: .3em;
 	padding-top: .2em;
@@ -50,16 +99,11 @@ body > header > h1 > a {
 	text-shadow: #dcb 1px 1px 1px;
 }
 
-nav#top_menu {
-	float: left;
-}
-
-nav#top_menu ul {
+#top_menu {
 	list-style-type: none;
 }
 
-nav#top_menu ul li {
-	float: left;
+#top_menu li {
 	margin-right: .3em;
 	margin-bottom: .3em;
 	padding: .35em .7em;
@@ -76,19 +120,28 @@ nav#top_menu ul li {
 	-o-transition: background-color 300ms ease-out;
 }
 
-nav#top_menu ul li a {
+#top_menu li {
+	min-width: 18px;
+	overflow: hidden;
+	text-align: center;
+}
+
+#top_menu li span {
+	margin-left: .5em;
+}
+
+#top_menu li a {
 	color: white;
 	font-family: "DejaVu Sans", sans-serif;
 	font-size: 0.85em;
 	font-weight: bold;
-	letter-spacing: .1em;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-shadow: 1px 1px 3px #888;
 }
 
-nav#top_menu ul li:hover,
-nav#top_menu ul li:focus {
+#top_menu li:hover,
+#top_menu li:focus {
 	background-color: #00aaea;
 
 	-moz-transition: background-color 300ms ease-out;
@@ -96,14 +149,13 @@ nav#top_menu ul li:focus {
 	-o-transition: background-color 300ms ease-out;
 }
 
-nav#top_menu ul li.active {
+#top_menu li.active {
 	background-image: -moz-linear-gradient(left, #d60 5px, rgba(251,132,0,0) 8px), url("/img/tile.png");
 	background-image: -webkit-linear-gradient(left, #d60 5px, rgba(251,132,0,0) 8px), url("/img/tile.png");
 	background-image: -o-linear-gradient(left, #d60 5px, rgba(251,132,0,0) 8px), url("/img/tile.png");
 }
 
 body > div.content {
-	clear: left;
 	padding: 0 .5em;
 }
 
@@ -167,7 +219,6 @@ div.content li:before {
 }
 
 body > footer {
-	clear: both;
 	margin-top: 3em;
 
 	color: #aaa;

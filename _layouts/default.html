@@ -21,17 +21,24 @@ View, California, 94041, USA. -->
     <link rel="stylesheet" href="/css/solarized.css" />
     <link rel="stylesheet" href="/css/screen.css" media="screen"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+
   </head>
   <body>
 
     <header>
       <h1><a href="/">fmdkdd</a></h1>
-      <nav id="top_menu">
-        <ul>
-          <li{% if page.title == 'Blog' %} class="active"{% endif %}><a href="/">Blog</a></li>
-          <li{% if page.title == 'Projects' %} class="active"{% endif %}><a href="/projects.html">Projects</a></li>
-          <li{% if page.title == 'Archives' %} class="active"{% endif %}><a href="/archives.html">Archives</a></li>
-          <li{% if page.title == 'About' %} class="active"{% endif %}><a href="/about.html">About</a></li>
+      <nav>
+        <ul id="top_menu">
+          <li{% if page.title == 'Blog' %} class="active"{% endif %}>
+            <a href="/"><i class="icon-comment"></i><span class="label">Blog</span></a></li>
+          <li{% if page.title == 'Projects' %} class="active"{% endif %}>
+            <a href="/projects.html"><i class="icon-rocket"></i><span class="label">Projects</span></a></li>
+          <li{% if page.title == 'Archives' %} class="active"{% endif %}>
+            <a href="/archives.html"><i class="icon-book"></i><span class="label">Archives</span></a></li>
+          <li{% if page.title == 'About' %} class="active"{% endif %}>
+            <a href="/about.html"><i class="icon-question-sign"></i><span class="label">About</span></a></li>
         </ul>
       </nav>
     </header>
