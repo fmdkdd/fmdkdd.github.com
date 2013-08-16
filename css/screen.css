@@ -35,6 +35,24 @@ body > header {
 	-webkit-flex-direction: row;
 }
 
+body > footer {
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	margin: auto;
+}
+
+div#contact {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-direction: row;
+	-webkit-flex-direction: row;
+
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
 /** Gradually drop nav menu text in favor of icons **/
 
 @media (max-width: 370px) {
