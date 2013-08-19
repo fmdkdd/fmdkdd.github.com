@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes On A Thesis Defense
+title: Notes on a thesis defense
 ---
 
 Tuesday was a very special day for my friend Karim.  He defended his

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Programming Languages Names Etymology
+title: Programming languages names etymology
 ---
 
 Do you ever wonder where the name of your favorite programming
