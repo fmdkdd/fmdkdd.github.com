@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600);
 
 @font-face {
 	font-family: "Mono";
@@ -84,15 +84,14 @@ div#contact {
  *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 body {
-	max-width: 40em;
+	max-width: 35em;
 	margin: 0 auto;
 	margin-bottom: .5em;
 
 	color: #3a3a3a;
-	background-color: #efefe6;
-	font-size: 16.5px;
-	font-family: "PT Serif", "Bitstream Charter", Georgia, serif;
-	line-height: 1.5;
+	font-size: 16pt;
+	font-family: "Bitstream Charter", serif;
+	line-height: 135%;
 }
 
 body > header {
@@ -102,19 +101,15 @@ body > header {
 }
 
 body > header > h1 {
-	margin-right: 1em;
-	margin-bottom: .3em;
 	padding-top: .2em;
-
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 body > header > h1 > a {
 	color: #d60;
-	font-family: "DejaVu Sans", sans-serif;
-	font-weight: bold;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
 	text-decoration: none;
-	text-shadow: #dcb 1px 1px 1px;
 }
 
 #top_menu {
@@ -130,7 +125,6 @@ body > header > h1 > a {
 	background-image: url("/img/tile.png");
 	background-repeat: repeat;
 
-	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 	border-radius: 0 0 .1em .1em;
 
 	-moz-transition: background-color 300ms ease-out;
@@ -150,12 +144,10 @@ body > header > h1 > a {
 
 #top_menu li a {
 	color: white;
-	font-family: "DejaVu Sans", sans-serif;
-	font-size: 0.85em;
-	font-weight: bold;
-	text-transform: uppercase;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1em;
+	font-weight: 600;
 	text-decoration: none;
-	text-shadow: 1px 1px 3px #888;
 }
 
 #top_menu li:hover,
@@ -177,15 +169,13 @@ body > div.content {
 	padding: 0 .5em;
 }
 
-body > div.content a {
-	color: #3a3a3a;
-
+a {
+	color: #48a;
 	text-decoration: none;
-	border-bottom: 1px dotted;
 }
 
 body > div.content a:hover {
-    color: #357;
+	border-bottom: 1px dotted;
 }
 
 body > div.content h2 a,
@@ -193,8 +183,7 @@ body > div.content h3 a,
 body > div.content h4 a,
 body > div.content h5 a,
 body > div.content h6 a {
-   color: #357;
-	border-bottom: none;
+	color: #3a3a3a;
 }
 
 body > div.content h2 a:hover,
@@ -207,8 +196,6 @@ body > div.content h6 a:hover {
 
 body > div.content h2, h3, h4, h5, h6 {
 	font-weight: bold;
-	color: #357;
-	text-shadow: #ccc 1px 1px 2px;
 }
 
 body > div.content h3, h4, h5, h6 {
@@ -217,9 +204,20 @@ body > div.content h3, h4, h5, h6 {
 	margin-top: 1em;
 }
 
+div.content h2 {
+	font-size: 1.3em;
+}
+
+div.content time {
+	font-size: 1em;
+}
+
+div.content h3 {
+	font-size: 1em;
+}
+
 div.content p {
-	margin-bottom: 1em;
-	text-align: justify;
+	margin-bottom: 0.75em;
 }
 
 div.content li {
@@ -251,7 +249,7 @@ body > footer span {
 }
 
 body > footer a {
-	color: #357;
+	color: #48a;
 
 	text-decoration: none;
 	border-bottom: 1px dotted;
@@ -274,39 +272,32 @@ article div.content h3 {
 }
 
 article div.content code {
-	font-family: "Mono", "Inconsolata", monospace;
-}
-
-div.content > p > code {
-	padding: .1em .3em 0 .3em;
-
-	border: 1px solid #ccc;
-	border-radius: 2px;
-	color: #666;
-	background-color: #fafaf6;
+	font-family: "Mono", monospace;
 }
 
 pre {
 	margin-bottom: 1em;
-	padding: .5em;
+	padding-left: .5em;
 
-	border: 1px solid #93a1a1;
-	border-radius: 2px;
+	border-left: 1px solid #93a1a1;
 
-	background-color: #fdf6e3;
+	font-size: 0.9em;
 }
 
 article div.content blockquote {
 	margin-left: 3em;
 
 	color: #666;
+
+	font-size: 0.9em;
+	line-height: 130%;
 }
 
 article div.content blockquote:before {
 	content: "\201C";
-	font-size: 50pt;
-	margin-left: -35pt;
-	margin-top: -15pt;
+	font-size: 3.5em;
+	margin-left: -0.5em;
+	margin-top: 0.1em;
 	float: left;
 }
 
