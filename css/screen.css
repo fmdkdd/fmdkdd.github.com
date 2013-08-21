@@ -1,7 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600);
+@import url(http://fonts.googleapis.com/css?family=Alegreya:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+SC:400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 
 @font-face {
-	font-family: "Mono";
+	font-family: "Ubuntu Mono";
 	src: local("Ubuntu Mono"), url("/css/ubuntu-mono.ttf");
 }
 
@@ -10,363 +12,414 @@
 	padding: 0;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Flexible layout
- *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-body > header {
-	display: flex;
-	display: -webkit-flex;
-
-	flex-direction: row;
-	-webkit-flex-direction: row;
-
-	-webkit-flex-wrap: wrap;
-
-	justify-content: space-between;
-	-webkit-justify-content: space-between;
+html {
+	min-width: 320px;
+	font-size: 17pt;
 }
 
-#top_menu {
-	display: flex;
-	display: -webkit-flex;
+body {
+	font-family: "Alegreya";
 
-	flex-direction: row;
-	-webkit-flex-direction: row;
+	color: #333;
+	background-color: white;
 }
 
-body > footer {
-	width: fit-content;
-	width: -moz-fit-content;
-	width: -webkit-fit-content;
-	margin: auto;
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
-div#contact {
-	display: flex;
-	display: -webkit-flex;
-
-	flex-direction: row;
-	-webkit-flex-direction: row;
-
-	justify-content: space-between;
-	-webkit-justify-content: space-between;
+h2 {
+	font-size: 1.4rem;
 }
 
-/** Gradually drop nav menu text in favor of icons **/
+/** Content **/
 
-@media (max-width: 370px) {
-	#top_menu li:nth-child(1) .label {
-		display: none;
+.main {
+	max-width: 31rem;
+	margin: 0 auto;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+
+	line-height: 1.37rem;
+}
+
+.main p + p {
+	margin-top: 1rem;
+}
+
+.main ul, ol {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 2rem;
+}
+
+.main ul li, .main ol li {
+	list-style-type: none;
+	text-indent: -1.5rem;
+}
+
+.main li:before {
+	content: '⋄';
+	margin-right: 1rem;
+}
+
+.main a {
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: rgba(255,255,255,0);
+
+	transition: color 300ms;
+
+	-moz-text-decoration-line: underline;
+	-moz-text-decoration-style: dotted;
+	-moz-text-decoration-color: rgba(255,255,255,0);
+
+	-webkit-text-decoration-line: underline;
+	-webkit-text-decoration-style: dotted;
+	-webkit-text-decoration-color: rgba(255,255,255,0);
+}
+
+.main p a:before, .main li a:before {
+	content: "‣";
+	color: #E94E77;
+	font-size: 90%;
+}
+
+.main a:hover {
+	color: #E94E77;
+	text-decoration-color: rgba(233,78,119,1);
+
+	-moz-text-decoration-color: rgba(233,78,119,1);
+
+	-webkit-text-decoration-color: rgba(233,78,119,1);
+}
+
+/** Header **/
+
+#banner {
+	width: 100%;
+	height: 3rem;
+	background-color: #F4EAD5;
+
+	border-bottom: 1px solid #C6A49A;
+
+	margin-bottom: 3rem;
+}
+
+@media (max-width: 680px) {
+	html {
+		font-size: 15pt;
 	}
 }
 
-@media (max-width: 460px) {
-	#top_menu li:nth-child(2) .label {
-		display: none;
+@media (max-width: 620px) {
+	html {
+		font-size: 14pt;
+	}
+}
+
+@media (max-width: 580px) {
+	html {
+		font-size: 13pt;
 	}
 }
 
 @media (max-width: 540px) {
-	#top_menu li:nth-child(3) .label {
-		display: none;
+	html {
+		font-size: 12pt;
 	}
 }
 
-@media (max-width: 600px) {
-	#top_menu li:nth-child(4) .label {
-		display: none;
+@media (max-width: 490px) {
+	#top {
+		margin-right: 0 !important;
 	}
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Common elements
- *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-body {
-	max-width: 35em;
-	margin: 0 auto;
-	margin-bottom: .5em;
-
-	color: #3a3a3a;
-	font-size: 16pt;
-	font-family: "Bitstream Charter", serif;
-	line-height: 135%;
+@media (min-width: 1280px) {
+	#top {
+		margin-left: calc((100% - 1280px) / 2);
+	}
 }
 
-body > header {
-	margin-bottom: 2.5em;
-	overflow: hidden;
-	padding-left: .5em;
-}
+#top {
+	height: 100%;
+	margin-right: calc((100% - 31rem) / 2);
+	padding-right: 0.3rem;
 
-body > header > h1 {
-	padding-top: .2em;
-	font-size: 2em;
-}
+	font-family: "Source Sans Pro";
 
-body > header > h1 > a {
-	color: #d60;
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 300;
-	text-decoration: none;
-}
-
-#top_menu {
-	list-style-type: none;
-}
-
-#top_menu li {
-	margin-right: .3em;
-	margin-bottom: .3em;
-	padding: .35em .7em;
-
-	background-color: #09b;
-	background-image: url("/img/tile.png");
-	background-repeat: repeat;
-
-	border-radius: 0 0 .1em .1em;
-
-	-moz-transition: background-color 300ms ease-out;
-	-webkit-transition: background-color 300ms ease-out;
-	-o-transition: background-color 300ms ease-out;
-}
-
-#top_menu li {
-	min-width: 18px;
-	overflow: hidden;
-	text-align: center;
-}
-
-#top_menu li span {
-	margin-left: .5em;
-}
-
-#top_menu li a {
 	color: white;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 1em;
+}
+
+h1 {
+	height: 100%;
 	font-weight: 600;
-	text-decoration: none;
+	letter-spacing: -0.3rem;
+
+	font-size: 4rem;
+
+	overflow: hidden;
+	padding-right: 1px;			  /* overflow eats 1px from the right in Firefox */
+	position: relative;
+	top: 1px;
 }
 
-#top_menu li:hover,
-#top_menu li:focus {
-	background-color: #00aaea;
+#top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
 
-	-moz-transition: background-color 300ms ease-out;
-	-webkit-transition: background-color 300ms ease-out;
-	-o-transition: background-color 300ms ease-out;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: space-between;
+	-webkit-align-items: flex-end;
 }
 
-#top_menu li.active {
-	background-image: -moz-linear-gradient(left, #d60 5px, rgba(251,132,0,0) 8px), url("/img/tile.png");
-	background-image: -webkit-linear-gradient(left, #d60 5px, rgba(251,132,0,0) 8px), url("/img/tile.png");
-	background-image: -o-linear-gradient(left, #d60 5px, rgba(251,132,0,0) 8px), url("/img/tile.png");
-}
+#nav_menu {
+	color: #C6A49A;
 
-body > div.content {
-	padding: 0 .5em;
-}
+	font-weight: 400;
+	text-transform: lowercase;
 
-a {
-	color: #48a;
-	text-decoration: none;
-}
+	display: flex;
+	flex-direction: row;
 
-body > div.content a:hover {
-	border-bottom: 1px dotted;
-}
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
 
-body > div.content h2 a,
-body > div.content h3 a,
-body > div.content h4 a,
-body > div.content h5 a,
-body > div.content h6 a {
-	color: #3a3a3a;
-}
-
-body > div.content h2 a:hover,
-body > div.content h3 a:hover,
-body > div.content h4 a:hover,
-body > div.content h5 a:hover,
-body > div.content h6 a:hover {
-	border-bottom: 1px dotted;
-}
-
-body > div.content h2, h3, h4, h5, h6 {
-	font-weight: bold;
-}
-
-body > div.content h3, h4, h5, h6 {
-	font-variant: small-caps;
-
-	margin-top: 1em;
-}
-
-div.content h2 {
-	font-size: 1.3em;
-}
-
-div.content time {
-	font-size: 1em;
-}
-
-div.content h3 {
-	font-size: 1em;
-}
-
-div.content p {
-	margin-bottom: 0.75em;
-}
-
-div.content li {
-	margin-left: 1em;
-	margin-bottom: .5em;
 	list-style-type: none;
 }
 
-div.content li:before {
-	content: '•';
-	color: #09b;
-
-	margin-left: -1em;
-	margin-right: .5em;
+#nav_menu li + li {
+	margin-left: 1rem;
 }
 
-body > footer {
-	margin-top: 3em;
+#nav_menu li a {
+	transition: color 300ms;
+}
 
-	color: #aaa;
-	font-size: .9em;
+#nav_menu li a:hover {
+	color: #E94E77;
+	transition: color 300ms;
+}
+
+/* Gradually drop nav menu text in favor of icons */
+
+@media (max-width: 360px) {
+	#nav_menu li:nth-child(1) .label {
+		display: none;
+	}
+}
+
+@media (max-width: 420px) {
+	#nav_menu li:nth-child(2) .label {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	#nav_menu li:nth-child(3) .label {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	#nav_menu li:nth-child(4) .label {
+		display: none;
+	}
+}
+
+/** Footer **/
+
+footer {
+	color: #333;
+
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 1.8rem;
+
 	text-align: center;
 }
 
-body > footer span {
-	font-size: 1.5em;
-	margin-left: .2em;
-	margin-right: .2em;
+/** Articles **/
+
+article .content ul li, ol li {
+	margin-bottom: 0.5rem;
 }
 
-body > footer a {
-	color: #48a;
+article .content h3 {
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
 
-	text-decoration: none;
-	border-bottom: 1px dotted;
+	font-family: "Alegreya SC";
+	font-weight: 400;
+	font-size: 1.1rem;
 }
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Article
- *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 article header {
-	margin-bottom: 1.5em;
+	margin-bottom: 0.5rem;
 }
 
 article header time {
-	color: #aaa;
+	color: #666;
 }
 
-article div.content h3 {
-	margin-bottom: .5em;
+hr.bar {
+	border: none;
+	height: 0.2rem;
+	background-color: #c6e5d9;
+	width: calc(31rem * 0.66);
+	position: relative;
+	right: 14rem;
+	margin-bottom: 0.6rem;
 }
 
-article div.content code {
-	font-family: "Mono", monospace;
+article .content h3:before {
+	content: "—";
+	margin-right: 0.3rem;
+	font-weight: 900;
+	color: #c6e5d9;
 }
 
-pre {
-	margin-bottom: 1em;
-	padding-left: .5em;
-
-	border-left: 1px solid #93a1a1;
-
-	font-size: 0.9em;
+article header h2 a:hover {
+	text-decoration: none;
 }
 
-article div.content blockquote {
-	margin-left: 3em;
+@media (min-width: 1080px) {
+	article header time {
+		display: block;
+		position: relative;
+		width: 8rem;
+		left: -9rem;
+		top: -1.25rem;
+		text-align: right;
+		height: 0;
+	}
+
+	article header {
+		margin-bottom: 0.8rem;
+	}
+}
+
+article .content blockquote {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 2rem;
 
 	color: #666;
 
-	font-size: 0.9em;
-	line-height: 130%;
+	font-size: 0.95rem;
+	line-height: 1.3rem;
 }
 
-article div.content blockquote:before {
+article .content blockquote:before {
 	content: "\201C";
-	font-size: 3.5em;
-	margin-left: -0.5em;
-	margin-top: 0.1em;
+	font-size: 3.5rem;
+	position: relative;
+	height: 0;
 	float: left;
+	right: 1.3rem;
+	top: 0.3rem;
 }
 
-article div.content img.inset {
+article .content img {
 	display: block;
-	float: right;
-	margin: 1em 0 1em 1em;
-	max-width: 30%;
+	margin:  0 auto;
+	width: 100%;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Archives
- *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-nav#archives ul li {
-	margin-left: 0;
-	margin-bottom: .25em;
+article .content code {
+	font-family: "Ubuntu Mono", monospace;
 }
 
-nav#archives ul li:before {
+article .content pre {
+	margin: 1rem 0;
+	padding-left: .5rem;
+
+	border-left: 0.07rem solid #93a1a1;
+
+	font-size: 0.8rem;
+	line-height: 1rem;
+}
+
+/** Projects **/
+
+h2#projects + ul li {
+	margin-bottom: 0.5rem;
+}
+
+/** Archives **/
+
+#archives ul li {
+	text-indent: 0;
+}
+
+#archives ul li:before {
 	content: none;
-
-	margin-left: 0;
-	margin-right: 0;
 }
 
-nav#archives ul time {
-	display: block;
-	float: left;
-	width: 6em;
+#archives h2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 
-	margin-right: .5em;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: space-between;
+	-webkit-align-items: center;
+}
+
+#archives time {
+	float: left;
+	width: 5rem;
+	margin-right: 0.5rem;
 	text-align: right;
 
-	color: #aaa;
+	color: #666;
 }
 
-nav#archives h2 {
-	position: relative;
-
-	margin-bottom: .5em;
+#archives h2 a:before {
+	content: none;
 }
 
-nav#archives h2 a {
-	border: none;
-	position: absolute;
-	right: 0;
+#archives h2 a:hover {
+	text-decoration: none;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Projects
- *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-div.content h2#projects {
-	margin-bottom: .5em;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * About
- *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-div.content h2#about {
-	margin-bottom: .5em;
-}
+/** About page **/
 
 img[alt='My face'] {
+	border-radius: 100rem;
+	width: 10rem;
+	margin: 0.5rem 1rem;
 	float: right;
-	margin-top: .5em;
-	margin-left: 2em;
-	margin-bottom: 2em;
-	width: 30%;
+}
+
+#sig {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: 0;
+
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+}
+
+#sig p {
+	margin: 0;
+}
+
+#sig #contact {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: space-between;
 }

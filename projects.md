@@ -3,6 +3,8 @@ layout: default
 title: Projects
 ---
 
+<hr class="bar">
+
 ## Projects
 
 + [Sparkets][], a multiplayer space shooter made for HTML5 browsers.
