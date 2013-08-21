@@ -101,10 +101,9 @@ h2 {
 }
 
 .main p a:before, .main li a:before {
-	content: "›";
+	content: "› ";
 	color: #E94E77;
 	font-weight: bold;
-	margin-right: 0.1rem;
 }
 
 .main a:hover {
