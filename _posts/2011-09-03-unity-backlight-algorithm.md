@@ -12,7 +12,7 @@ without leaving the keyboard.
 Ever since I began using it however, one detail caught my attention:
 the colored backlight behind applications icons.
 
-<img class="inset" src="/img/posts/unity.png" alt="Unity backlight zoom" />
+![Unity backlight zoom](/img/posts/unity.png)
 
 ### [Backlight color](#backlight_color)
 
