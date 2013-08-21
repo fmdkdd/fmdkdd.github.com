@@ -53,12 +53,23 @@ h2 {
 	font-size: 1.4rem;
 }
 
+h2:before {
+	content: "| ";
+	font-weight: bold;
+	color: #c6e5d9;
+
+	width: 0;
+	float: left;
+	position: relative;
+	right: 0.75rem;
+}
+
 /** Content **/
 
 .main {
 	max-width: 31rem;
 	margin: 0 auto;
-	padding-left: 0.3rem;
+	padding-left: 1rem;
 	padding-right: 0.3rem;
 
 	line-height: 1.37rem;
@@ -287,21 +298,15 @@ article header time {
 	color: #666;
 }
 
-hr.bar {
-	border: none;
-	height: 0.2rem;
-	background-color: #c6e5d9;
-	width: calc(31rem * 0.66);
-	position: relative;
-	right: 14rem;
-	margin-bottom: 0.6rem;
-}
-
 article .content h3:before {
-	content: "—";
-	margin-right: 0.3rem;
-	font-weight: 900;
+	content: "§ ";
+	font-weight: bold;
 	color: #c6e5d9;
+
+	width: 0;
+	float: left;
+	position: relative;
+	right: 0.85rem;
 }
 
 article header h2 a:hover {
@@ -381,7 +386,9 @@ h2#projects + ul li {
 	content: none;
 }
 
-#archives h2 {
+#archives header {
+	font-size: 1.4rem;
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

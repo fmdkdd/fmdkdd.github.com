@@ -3,8 +3,6 @@ layout: default
 title: About
 ---
 
-<hr class="bar">
-
 ## About
 
 ![My face](img/me.png)
