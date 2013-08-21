@@ -80,7 +80,7 @@ h2 {
 }
 
 .main li:before {
-	content: '⋄';
+	content: '◊';
 	margin-right: 1rem;
 }
 
