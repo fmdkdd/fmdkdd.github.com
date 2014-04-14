@@ -14,7 +14,7 @@ the colored backlight behind applications icons.
 
 ![Unity backlight zoom](/img/posts/unity.png)
 
-### [Backlight color](#backlight_color)
+### Backlight color
 
 Notice how every icon has a square with rounded corners behind it?
 This square is colored for currently open applications.  This is the
@@ -26,7 +26,7 @@ backlight, but a deeper orange than Update Manager (the box with the
 orange arrow).  Thus, the backlight color seems to match the icon
 contents.  But how exactly is the color determined?
 
-### [Algorithm hypothesis](#algorithm_hypothesis)
+### Algorithm hypothesis
 
 Initially, we might guess that the backlight algorithm picks the
 icon's most abundant color.  It is a good fit for the icons of Emacs,
@@ -48,7 +48,7 @@ There are algorithms for detecting image features, but they are far
 too complex for the task at hand.  In fact, the actual algorithm is
 quite simple.
 
-### [The code](#the_code)
+### The code
 
 Diving into the [source code][code] for Unity, we find the relevant function
 in the `LauncherIcon` class, named `ColorForIcon`.  Here is

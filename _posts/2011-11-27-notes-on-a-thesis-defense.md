@@ -14,7 +14,7 @@ talk and the following Q&A, as I was seated just behind the six of
 them.  I also took note of specific points I think he got right during
 his defense, and some others I would have done differently.
 
-### [Focus on content, not on style](#focus_on_content_not_on_style)
+### Focus on content, not on style
 
 Nearly everyone uses [Beamer][] at my University.  It's not
 particularly a joy to work with, but it produces clean slides.  The
@@ -28,7 +28,7 @@ However, Karim quickly made me forget the atrocious theme after two
 minutes or so, because the _content_ was interesting.  The theme may
 be ugly, but at least it's not distracting.
 
-### [Only show what's relevant](#only_show_whats_relevant)
+### Only show what's relevant
 
 At one point, Karim showed us one of his algorithms on one slide.  An
 entire, forty-something lines algorithm on just one slide.  In a talk,
@@ -41,7 +41,7 @@ Still, I would have preferred a high-level description of the
 algorithm rather than the whole thing.  I can always check his
 dissertation for the details.
 
-### [State your point clearly, and hammer it](#state_your_point_clearly_and_hammer_it)
+### State your point clearly, and hammer it
 
 When you have the luxury of a one-hour talk, everyone should get your
 main point, even your family at the end of the room who came to cheer
@@ -53,7 +53,7 @@ conclusion with it.  You _don't_ want the jury to ask you to state the
 aim of your thesis during Q&A, so print it on a t-shirt just to be
 safe.
 
-### [Don't worry](#dont_worry)
+### Don't worry
 
 Karim worked nearly five years on his thesis.  Of the two algorithms
 he offered, one was developed in the last year, and the other he

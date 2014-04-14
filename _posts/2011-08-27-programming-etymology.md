@@ -6,7 +6,7 @@ title: Programming languages names etymology
 Do you ever wonder where the name of your favorite programming
 language comes from?  I do.  The first to struck me was Python.
 
-### [Why Python?](#why_python)
+### Why Python?
 
 At first we might associate it with the large, constricting snake,
 star of many B-movies about people in beige shorts being swallowed
@@ -31,7 +31,7 @@ concerning the Python language often refers to Monty Python skits (see
 the [official tutorial][2] for an example), but seldom mentions
 reptiles.
 
-### [It's not a snake ... or is it?](#its_not_a_snake__or_is_it)
+### It's not a snake ... or is it?
 
 But wait, where did the snake logo came from then?  There must be some
 connexion, otherwise it would not ornate the official homepage to the
