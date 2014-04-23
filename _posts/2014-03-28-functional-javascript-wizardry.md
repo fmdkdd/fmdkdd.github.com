@@ -118,7 +118,7 @@ nodejs.
 This `m2f` function is quite handy when you are used to a functional
 style of programming.  You can find it in Fogus’
 [_Functional JavaScript_][funjs] under the name ‘invoker’.  However,
-there is another way to define `mf2` using a powerful corner of
+there is another way to define `m2f` using a powerful corner of
 EcmaScript 5.1, `bind`.
 
 ### Calling and binding functions
