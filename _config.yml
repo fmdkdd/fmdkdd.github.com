@@ -1,4 +1,4 @@
 markdown: kramdown
-pygments: true
+highlighter: pygments
 
 exclude: [./utils, README.md, LICENSE]
