@@ -32,6 +32,14 @@
 	padding: 0;
 }
 
+*::selection {
+  background-color: #F4EAD5;
+}
+
+*::-moz-selection {
+  background-color: #F4EAD5;
+}
+
 html {
 	min-width: 320px;
 	font-size: 17pt;
