@@ -93,12 +93,12 @@ h2:before {
 	margin-left: 2rem;
 }
 
-.main ul li, .main ol li {
+.main ul li {
 	list-style-type: none;
 	text-indent: -1.5rem;
 }
 
-.main li:before {
+.main ul li:before {
 	content: '◊';
 	margin-right: 1rem;
 }
