@@ -66,7 +66,7 @@ add(2);             // error: `this.items` is undefined
 {% endhighlight %}
 
 The call to `add(2)` has no explicit caller, so `this` is bound to the
-global object, which does have an `items` object.
+global object, which doesn't have an `items` object.
 
 Also, functions have a unique `prototype` property that is
 unfortunately not the same thing as the `[[Proto]]` property that
