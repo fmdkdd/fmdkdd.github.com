@@ -8,7 +8,7 @@ communicate, we build models of reality through language, gestures, paintings,
 music...
 
 When reading an essay, or any piece of literature really, I read a simplified
-view of the world.  A view that can fit into a page of words.  A can of reality.
+view of the world.  A view that can fit into a page of words.  Reality in a can.
 
 Reality can be experienced, that's for certain.  We do experience it every day.
 It can be argued that we do not experience *all* of it, because all our
