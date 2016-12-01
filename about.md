@@ -7,25 +7,19 @@ title: About
 
 ![My face](img/me.png)
 
-I'm a French knowledge seeker who loves to learn, in order to gain
-greater understanding.  And as knowledge is gained, my ignorance
-widens, which in turn leads to more learning.
+I'm a knowledge seeker who loves to learn, in order to gain a greater
+understanding of myself and of the world around me.  And as I gain knowledge, my
+ignorance widens, which in turn leads to more learning.
 
-I'm interested in the following subset topics of computer science:
-programming, languages, algorithms, structures, idioms, tricks.  When
-I'm not reading a book or a web article on one of these topics, I'm
-most likely building something to scratch an itch, or just tinkering.
-Or resting.  I do that too.  Beside walking, I also enjoy most forms
-of modern entertainment: music, cinema, literature and gaming.
+I'm principally interested in computer science and programming; I like to build
+stuff in order to understand how things work, or just to tinker with an idea.  I
+have a soft spot for emulators and games, but I also like learning programming
+languages, algorithms, data structures, idioms, or tricks.  Beyond that, I like
+reading, walking, biking and sleeping.
 
-I'm a strong proponent of free software and open knowledge.  As a
-testimony to that, you are free to browse, modify and reuse the
-[source code for this site][source], which is powered by [Jekyll][].
-Unless otherwise noted, all content on this site is licensed under a
-[Creative Commons Attribution-ShareAlike 3.0 Unported License][cc-by-sa].
-
-I'm currently a PhD student in Computer Science at
-[École des Mines de Nantes][emn], and globally having fun.
+I'm a strong proponent of free software and open knowledge.  You can find most
+of my stuff on Github, even the [source][] for this website.  Unless otherwise
+noted, all content on this site is in the public domain ([CC-0][]).
 
 <div id="sig">
 <p id="name">Florent Marchand de Kerchove de Denterghem</p>
@@ -35,7 +29,5 @@ I'm currently a PhD student in Computer Science at
 </div>
 </div>
 
-[emn]: http://www.mines-nantes.fr/
 [source]: http://www.github.com/fmdkdd/fmdkdd.github.com
-[Jekyll]: http://jekyllrb.com/
-[cc-by-sa]: http://creativecommons.org/licenses/by-sa/3.0/
+[CC-0]: https://creativecommons.org/publicdomain/zero/1.0/
