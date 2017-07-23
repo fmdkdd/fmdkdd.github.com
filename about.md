@@ -21,9 +21,7 @@ img[alt='My face'] {
 	width: -webkit-fit-content;
 }
 
-#contact {
-    display: flex;
-}
+#mail-domain { font-family: monospace; }
 </style>
 
 ## About
@@ -49,8 +47,8 @@ noted, all content on this site is in the public domain ([CC-0][]).
 </div>
 
 <div id="contact">
-<p id="mail">fmdkdd at 0xc0de</p>
-<p id="github"><a href="https://github.com/fmdkdd/">github/fmdkdd</a></p>
+<i class="fa fa-envelope" aria-hidden="true"></i> <span id="mail">fmdkdd at <span id="mail-domain">0xc0de</span></span><br/>
+<i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/fmdkdd/">github/fmdkdd</a>
 </div>
 
 [source]: https://www.github.com/fmdkdd/fmdkdd.github.com
