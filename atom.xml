@@ -12,7 +12,7 @@ layout: nil
   <id>http://fmdkdd.github.com/</id>
   <author>
 	 <name>Florent Marchand de Kerchove de Denterghem</name>
-	 <email>fmdkdd@gmail.com</email>
+	 <email>fmdkdd@0xc0de.fr</email>
   </author>
 
   {% for post in site.posts %}
