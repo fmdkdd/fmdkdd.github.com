@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Unity backlight color algorithm
+highlight: yes
 ---
 
 With the release of Ubuntu 11.04, the new [Unity][] interface was

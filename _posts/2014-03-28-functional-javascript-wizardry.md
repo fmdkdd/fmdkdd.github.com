@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Functional JavaScript Wizardry
+highlight: yes
 ---
 
 Since EcmaScript 5, JavaScript has gotten nice collection functions

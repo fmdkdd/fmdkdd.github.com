@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Many Ways to Build Objects in JavaScript
+highlight: yes
 ---
 
 In JavaScript, the dominant pattern to declare objects is to write a
