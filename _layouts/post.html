@@ -2,6 +2,64 @@
 layout: default
 ---
 
+<style>
+ article h2 { text-transform: capitalize; }
+ article h2 a:hover {
+   text-decoration: none;
+ }
+
+ @media (min-width: 1080px) {
+   article header time {
+     display: block;
+     position: relative;
+     width: 8rem;
+     left: -9rem;
+     top: -1.25rem;
+     text-align: right;
+     height: 0;
+   }
+
+   article header {
+     margin-bottom: 0.8rem;
+   }
+ }
+
+ article .content blockquote {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   margin-left: 2rem;
+
+   color: #666;
+
+   line-height: 1.25;
+ }
+
+ article .content blockquote:before {
+   content: "\201C";
+   font-size: 3.5rem;
+   position: relative;
+   height: 0;
+   float: left;
+   right: 2rem;
+   top: -1.5rem;
+   color: #999;
+ }
+
+ article .content img {
+   display: block;
+   margin:  0 auto;
+   width: 100%;
+ }
+
+ article .content pre {
+   margin: 1rem 0;
+   padding-left: .25rem;
+   line-height: 1;
+
+	 border-left: 0.07rem dotted #93a1a1;
+ }
+</style>
+
 <article>
   <header>
     <h2><a href={{ page.url }}>{{ page.title }}</a></h2>

@@ -3,6 +3,29 @@ layout: default
 title: About
 ---
 
+<style>
+img[alt='My face'] {
+	border-radius: 100rem;
+	width: 10rem;
+	margin: 0.5rem 1rem;
+	float: right;
+}
+
+#sig {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: 0;
+
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+}
+
+#contact {
+    display: flex;
+}
+</style>
+
 ## About
 
 ![My face](img/me.png)
@@ -23,10 +46,11 @@ noted, all content on this site is in the public domain ([CC-0][]).
 
 <div id="sig">
 <p id="name">Florent Marchand de Kerchove de Denterghem</p>
+</div>
+
 <div id="contact">
 <p id="mail">fmdkdd at 0xc0de</p>
 <p id="github"><a href="https://github.com/fmdkdd/">github/fmdkdd</a></p>
-</div>
 </div>
 
 [source]: https://www.github.com/fmdkdd/fmdkdd.github.com
