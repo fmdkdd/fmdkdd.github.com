@@ -120,7 +120,6 @@ h1 {
 
 	font-size: 4rem;
 
-	overflow: hidden;
   height: 100%;
 	position: relative;
   bottom: -1px;
@@ -168,7 +167,7 @@ h1 a:hover {
 /** Responsive **/
 
 html {
-	min-width: 320px;
+	min-width: 360px;
 }
 
 @media (max-width: 680px) {
@@ -209,25 +208,25 @@ html {
 
 /* Gradually drop nav menu text in favor of icons */
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
 	#nav_menu li:nth-child(1) .label {
 		display: none;
 	}
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
 	#nav_menu li:nth-child(2) .label {
 		display: none;
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 730px) {
 	#nav_menu li:nth-child(3) .label {
 		display: none;
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 	#nav_menu li:nth-child(4) .label {
 		display: none;
 	}
