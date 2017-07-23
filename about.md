@@ -25,9 +25,9 @@ noted, all content on this site is in the public domain ([CC-0][]).
 <p id="name">Florent Marchand de Kerchove de Denterghem</p>
 <div id="contact">
 <p id="mail">fmdkdd at 0xc0de</p>
-<p id="github"><a href="http://github.com/fmdkdd/">github/fmdkdd</a></p>
+<p id="github"><a href="https://github.com/fmdkdd/">github/fmdkdd</a></p>
 </div>
 </div>
 
-[source]: http://www.github.com/fmdkdd/fmdkdd.github.com
+[source]: https://www.github.com/fmdkdd/fmdkdd.github.com
 [CC-0]: https://creativecommons.org/publicdomain/zero/1.0/
