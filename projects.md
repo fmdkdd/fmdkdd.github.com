@@ -124,7 +124,7 @@ one-shots.
 [Lectures Notes]: https://fmdkdd.free.fr/
 [Github page]: https://github.com/fmdkdd
 [merwaaan]: https://merwanachibet.net
-[LD48]: http://www.0xc0de.io/ld48/
+[LD48]: http://www.0xc0de.fr/ld48/
 [You are the Münster]: http://www.0xc0de.fr/yatm/
 [chip8]: http://www.0xc0de.fr/chip8/
 [chipers]: https://github.com/fmdkdd/chipers
