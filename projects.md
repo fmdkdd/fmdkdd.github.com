@@ -119,20 +119,20 @@ teachers to use.
 See my [Github page][] for source code for all of the above, and other
 one-shots.
 
-[s3c]: https://fmdkdd.0xc0de.io/s3c
+[s3c]: http://www.0xc0de.fr/s3c/
 [Sparkets]: https://github.com/fmdkdd/sparkets
 [Lectures Notes]: https://fmdkdd.free.fr/
 [Github page]: https://github.com/fmdkdd
 [merwaaan]: https://merwanachibet.net
-[LD48]: https://fmdkdd.0xc0de.fr/ld48/
-[You are the Münster]: https://fmdkdd.0xc0de.fr/yatm/
-[chip8]: https://fmdkdd.0xc0de.fr/chip8
+[LD48]: http://www.0xc0de.io/ld48/
+[You are the Münster]: http://www.0xc0de.fr/yatm/
+[chip8]: http://www.0xc0de.fr/chip8/
 [chipers]: https://github.com/fmdkdd/chipers
 [dear imgui]: https://github.com/ocornut/imgui
-[Monte-Carlo Connect Four]: https://fmdkdd.0xc0de.fr/mcc4/
+[Monte-Carlo Connect Four]: http://www.0xc0de.fr/mcc4/
 [Laby-o-matic]: https://github.com/fmdkdd/laby-o-matic
-[bump]: http://fmdkdd.0xc0de.fr/bump/
-[webppm]: http://fmdkdd.0xc0de.fr/webppm/
+[bump]: http://www.0xc0de.fr/bump/
+[webppm]: http://www.0xc0de.fr/bump/
 [boyo.js]: https://merwaaan.github.io/boyo.js/
 [megado]: https://github.com/merwaaan/megado
 [gbs]: https://github.com/fmdkdd/gbs
