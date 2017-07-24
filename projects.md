@@ -121,7 +121,7 @@ one-shots.
 
 [s3c]: http://www.0xc0de.fr/s3c/
 [Sparkets]: https://github.com/fmdkdd/sparkets
-[Lectures Notes]: https://fmdkdd.free.fr/
+[Lectures Notes]: http://fmdkdd.free.fr/
 [Github page]: https://github.com/fmdkdd
 [merwaaan]: https://merwanachibet.net
 [LD48]: http://www.0xc0de.fr/ld48/
