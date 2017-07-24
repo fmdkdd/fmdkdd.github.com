@@ -21,6 +21,9 @@ title: Projects
 
 ## Projects
 
+Here are few things I have made or have contributed to.  They are roughly in
+reverse chronological order of involvement.
+
 <img src="img/projects/flycheck.png" alt="flycheck image">
 [flycheck][], a GNU Emacs plugin for syntax-checking code and reporting
 diagnostics in the buffer.  I've been helping around as a co-maintainer since
@@ -110,6 +113,13 @@ for Go AIs.  I wondered how that worked and if that would make a decent
 adversary for Connect Four.  Although it's not very strong, it still caught me
 off-guard.  Plus, the algorithm was rather simple to write.
 
+<img src="img/projects/shinkoban.png" alt="shinkoban image">
+[shinkoban][], a Sokoban with sprites blissfully lifted from a famous SNES game.
+This was initially a class assignment that I elaborated upon and polished in a
+few days before applying for an internship at a local game company.  Got the
+interview, not the job.  Still felt pretty good about this game.  The levels
+were not mine, and they get pretty hard towards the end!
+
 <a href="img/projects/cours.png"><img src="img/projects/cours.png" alt="lecture notes image"></a>
 [Lectures notes][], taken during my Computer Science degree at the University of
 Le Havre, in French.  I transcribed most of my math classes in LaTeX (live, save
@@ -138,3 +148,4 @@ one-shots.
 [gbs]: https://github.com/fmdkdd/gbs
 [flycheck]: http://www.flycheck.org/en/latest/
 [MELPA]: https://melpa.org/
+[shinkoban]: https://github.com/fmdkdd/shinkoban
