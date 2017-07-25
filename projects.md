@@ -129,20 +129,20 @@ teachers to use.
 See my [Github page][] for source code for all of the above, and other
 one-shots.
 
-[s3c]: http://0xc0de.fr/s3c/
+[s3c]: /s3c/
 [Sparkets]: https://github.com/fmdkdd/sparkets
 [Lectures Notes]: http://fmdkdd.free.fr/
 [Github page]: https://github.com/fmdkdd
 [merwaaan]: https://merwanachibet.net
-[LD48]: http://0xc0de.fr/ld48/
-[You are the Münster]: http://0xc0de.fr/yatm/
-[chip8]: http://0xc0de.fr/chip8/
+[LD48]: /ld48/
+[You are the Münster]: /yatm/
+[chip8]: /chip8/
 [chipers]: https://github.com/fmdkdd/chipers
 [dear imgui]: https://github.com/ocornut/imgui
-[Monte-Carlo Connect Four]: http://0xc0de.fr/mcc4/
+[Monte-Carlo Connect Four]: /mcc4/
 [Laby-o-matic]: https://github.com/fmdkdd/laby-o-matic
-[bump]: http://0xc0de.fr/bump/
-[webppm]: http://0xc0de.fr/bump/
+[bump]: /bump/
+[webppm]: /webppm/
 [boyo.js]: https://merwaaan.github.io/boyo.js/
 [megado]: https://github.com/merwaaan/megado
 [gbs]: https://github.com/fmdkdd/gbs
