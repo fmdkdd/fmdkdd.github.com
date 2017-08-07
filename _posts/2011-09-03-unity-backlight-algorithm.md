@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unity backlight color algorithm
+title: Unity Backlight Color Algorithm
 highlight: yes
 ---
 
