@@ -27,14 +27,14 @@ language's author, in [Foreword to _Programming Python_][1]:
 > Monty Python's Flying Circus).
 
 Jolly good!  As a testament to this ancestry, the literature
-concerning the Python language often refers to Monty Python skits (see
+concerning the Python language often references Monty Python skits (see
 the [official tutorial][2] for an example), but seldom mentions
 reptiles.
 
 ### It's not a snake ... or is it?
 
 But wait, where did the snake logo came from then?  There must be some
-connexion, otherwise it would not ornate the official homepage to the
+connection, otherwise it would not ornate the official homepage of the
 language. Guido van Rossum provides the answer in
 [an interview with Computer World][4]:
 
