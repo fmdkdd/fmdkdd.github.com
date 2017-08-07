@@ -37,6 +37,12 @@ with glitches.  I'm helping around with infrastructure: making it builds on
 Linux, continuous integration, sanitizers and the like.  At some point I should
 start working on sound emulation.
 
+<a href="img/projects/ld39.png"><img src="img/projects/ld39.png" alt="ld39 image"></a>
+[Bright Plateau][], a short puzzle game made in 72 hours for the Ludum Dare 39
+jam, in duo with [merwaaan][].  You have to power up houses by placing
+generators on the plateau.  This time we went 3D with [THREE.js][], and,
+although exhausted, we were quite satisfied with how the game turned out.
+
 <img src="img/projects/boyo.png" alt="boyo image">
 [boyo.js][], a GameBoy emulator in JavaScript made by [merwaaan][].  I
 implemented the audio emulation, improved the performance so that it would run
@@ -149,3 +155,5 @@ one-shots.
 [flycheck]: http://www.flycheck.org/en/latest/
 [MELPA]: https://melpa.org/
 [shinkoban]: https://github.com/fmdkdd/shinkoban
+[Bright Plateau]: /ld39/
+[THREE.js]: https://threejs.org/
