@@ -69,16 +69,16 @@ a CRT emulation effect to make it interesting, but it's not really convincing,
 and actually quite slow.
 
 <a href="img/projects/yatm.jpg"><img src="img/projects/yatm.jpg" alt="yatm image"></a>
-[You are the Münster][], another Ludum Dare game, this time made in duo
-with [merwaaan][].  The theme was "You are the monster", and... well, the pun
-was too tempting.  It's a platform game with unlockables (à la Metroid), though
-we only had the time to put two areas in the game.  The art is much better than
-my previous solo attempt (because I made only half of it!), and there's even a
-homemade background music this time.  Jumping can be a bit frustrating at times,
-so we added checkpoints.
+[You are the Münster][], another Ludum Dare game, made in duo with [merwaaan][].
+The theme was "You are the monster", and... well, the pun was too tempting.
+It's a platform game with unlockables (à la Metroid), though we only had the
+time to put two areas in the game.  The art is much better than my previous solo
+attempt (because I made only half of it!), and there's even a homemade
+background music this time.  Jumping can be a bit frustrating at times, so we
+added checkpoints.
 
 <a href="img/projects/ld48.png"><img src="img/projects/ld48.png" alt="ld48 image"></a>
-[LD48][], a game made solo, in parallel to the Ludum Dare 48 week-end, but not
+[LD48][], a game made solo, in parallel to the Ludum Dare 29 week-end, but not
 part of the competition.  It started as a minimalist action-RPG, but I had too
 much fun and added homemade pixel art and sound effects.  Now it's neither
 minimalist, nor particularly fun.  Still had a good time making it.
