@@ -69,7 +69,7 @@ a CRT emulation effect to make it interesting, but it's not really convincing,
 and actually quite slow.
 
 <a href="img/projects/yatm.jpg"><img src="img/projects/yatm.jpg" alt="yatm image"></a>
-[You are the Münster][], another Ludum Dare game, made in duo with [merwaaan][].
+[You Are The Münster][], another Ludum Dare game, made in duo with [merwaaan][].
 The theme was "You are the monster", and... well, the pun was too tempting.
 It's a platform game with unlockables (à la Metroid), though we only had the
 time to put two areas in the game.  The art is much better than my previous solo
