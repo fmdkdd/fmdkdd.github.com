@@ -50,8 +50,32 @@ in the end.  We felt pretty good about "Running out of space" winning, but we
 did not cast our votes, as we didn't even have accounts to the new site at the
 time.
 
-We looked at past LD entries, I showed Merwan a game I liked: Twin Condition,
-Rezoner style
+We then checked out a few of the top games from the last Ludum Dare for
+inspiration:
+
+![LD38 top games](/img/posts/ld38.png)
+
+Out of these six games, we played: *Honey Home*, *The Deep*, *Super Kaiju Dunk
+City* and *Snowed In*.  *Little Lands* looked awesome, but was Windows only, so
+we skipped it.  For each game, we tried to understand its appeal, how they used
+the theme to good effect, and summarized what we liked/disliked.
+
+I showed Merwan another LD game I had stumbled upon
+prior: [Twin Condition](https://jackrugile.com/twin-condition/).  I really liked
+the clean aesthetic, and the fact that you had to play both part of the levels
+differently, but at the same time:
+
+![Twin Condition screenshot](/img/posts/twin-conditions.png)
+
+I also showed him [this prototype](http://rezoner.net/labs/spacesim.io/client/)
+by rezoner, the author of [Playground.js](http://playgroundjs.com/) (among other
+nice things); I liked the effectiveness and look of the low-resolution 3D
+graphics:
+
+![Rezoner space prototype screenshot](/img/posts/spacesim-proto.png)
+
+Though it was not obvious to us at the time, in retrospect you can find
+influences from all of these sources in the final game.
 
 Then it was already 1AM.  For our previous LD, we stayed up until the theme had
 been announced, started scribbling game ideas on paper, and went to bed only
@@ -69,10 +93,8 @@ anything to us.  But now the choice had been made.  We started throwing ideas:
 
 ![paper with game ideas for the theme](/img/posts/ld39-ideas.png)
 
-"The Deep" was a winning entry from the last LD that we had discussed the night
-before.  We quickly gravitated to the idea in lower right: "Puzzle based around
-the power grid".  Although at first it was much more elaborate than what we have
-now.
+We quickly gravitated to the idea in lower right: "Puzzle based around the power
+grid".  Although at first it was much more elaborate than what we have now.
 
 I remember pushing for a tycoon-like: there would be houses and plants to
 consume power, and you would buy and put power generators on the map to supply
@@ -111,10 +133,10 @@ We tried to play with the idea in our heads.  Would that be easy to understand?
 How would you play the game?  How would you visualize the constraint of
 validating the power distribution over time?  It turned out that the time
 distribution was equivalent to a distribution in another spatial dimension.  So,
-instead of placing generators on a plane, you were really placing them in
-space.  But how would that work, exactly?  Placing objects in space on a 2D
-screen is not the easy to grasp, even when accustomed.  Maybe display the time
-dimension below, like in [Shenzhen I/O][].
+instead of placing generators on a plane, you were really placing them in space.
+But how would that work, exactly?  Placing objects in space on a 2D screen is
+not the easy to grasp, even when accustomed.  Maybe display the time dimension
+below, like in [Shenzhen I/O](http://www.zachtronics.com/shenzhen-io/).
 
 ![Shenzhen I/O screenshot]()
 
@@ -137,7 +159,7 @@ thought about potential ways to present this to the player, but did not find a
 satisfying solution, and elected to review this once we had the game running.
 In the end, we never reviewed it: the night levels are introduced without any
 explanation, but so far no player has complained about not understanding that
-they have to solve both sides at once.
+they have to light all the houses on both sides to solve the level.
 
 ### Paper prototype
 
@@ -148,7 +170,7 @@ power a straight line, and the wind turbine would power its immediate neighbors
 while playing).  I cut small lines and crosses out of paper, and drew a few
 levels to get started:
 
-![coverage illustration]()
+![paper prototype photo]()
 
 The number represent the amount of houses you have to power.  Each generator
 provides 1 unit of power to each tile it covers, so you have to use multiple
@@ -197,6 +219,8 @@ It was already 4PM, so we elected to start coding rather than to keep designing
 in the dark.  Maybe better ideas would come once we had something in our hands.
 
 ### Day 2:
+
+INVENTORY
 
 ### Designing the levels
 
