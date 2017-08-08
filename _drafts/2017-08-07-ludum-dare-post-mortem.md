@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ludum Dare 39 Post-Mortem
+highlight: yes
 ---
 
 ![Bright Plateau screenshot](/img/projects/ld39.png)
@@ -14,7 +15,7 @@ now.
 You can play *Bright Plateau* [right here](/ld39).  The rest of this post is a
 recollection of the 72 hours we spent making it, and may contain minor spoilers.
 
-### Day 0: Warming-up
+### Warming-up
 
 In our timezone, the theme is announced at 3AM, in the night from Friday to
 Saturday.  Merwan arrived Friday evening and, after we exchanged pleasantries,
@@ -84,7 +85,7 @@ been announced, started scribbling game ideas on paper, and went to bed only
 after we had nothing further to write down.  This time though, we elected to
 start off with a good night's sleep and to find out the theme in the morning.
 
-### Finding a game idea
+### Finding the game idea
 
 We woke up at around 9AM to discover the winning theme:
 
@@ -150,9 +151,7 @@ had only two: one slice for the day, one for the night.  Then, we could show the
 grid in the day, have a little sun floating in the sky, and you would pick up
 the sun and drag to the right to see the grid at night.  At night, the coverage
 of the generators would change, and to solve the puzzle you would have to solve
-day and night simultaneously.  We felt that would make for an interesting game:
-simple coverage alone would be quickly boring, but solving coverage with two
-slightly different sets of constraints?  A tricky twist!
+day and night simultaneously.
 
 I pushed for having the day and night side-by-side, as I felt that going back
 and forth between the day and night would make playing unnecessarily
@@ -166,31 +165,37 @@ In the end, we never reviewed it: the night levels are introduced without any
 explanation, but so far no player has complained about not understanding that
 they have to light all the houses on both sides to solve the level.
 
-### Paper prototype
+At this point, we felt this might be an interesting game: simple coverage alone
+would be quickly boring, but solving coverage with two slightly different sets
+of constraints?  A tricky twist!
 
-We took this idea for a spin.  What should the coverage for the generators be?
-Again, we went for the simplest thing we could think of: the solar panel would
-power a straight line, and the wind turbine would power its immediate neighbors
-(in the final game, we did it the other way around, as it felt more natural
-while playing).  I cut small lines and crosses out of paper, and drew a few
-levels to get started:
+### Prototyping on paper
 
-![photo of generators prototypes on paper](/img/posts/ld39-paper-generators.jpg)
+We took this idea for a spin on paper before committing to code it.
 
-![photo of level prototypes on paper](/img/posts/ld39-paper-levels.jpg)
+What should the coverage for the generators be?  Again, we went for the simplest
+thing we could think of: the solar panel would power a straight line, and the
+wind turbine would power its immediate neighbors (in the final game, we did it
+the other way around, as it felt more natural while playing).  I cut small lines
+and crosses out of paper, and drew a few levels to get started:
 
-The number represent the amount of houses you have to power.  Each generator
-provides 1 unit of power to each tile it covers, so you have to use multiple
-generators to supply power to tiles with 2 or more houses.
+![sketch of generators](/img/posts/ld39-paper-generators.jpg)
+
+![level sketches on paper](/img/posts/ld39-paper-levels.jpg)
+
+The number represent the amount of houses you have to power up.  Each generator
+provides 1 unit of power to each tile it covers, so you have to overlap the
+coverage area of multiple generators to supply power to tiles with 2 or more
+houses.
 
 In designing these levels, I went for the simplest non-trivial configurations of
 lines and crosses I could find, then simply numbered *some* of the tiles covered
-by the shapes.  Numbering all the tiles would have given away the placement of
-the generators, and would have over-constrained the solution.  Solving the
-levels would have been easy and boring.  By not giving away too much
+by the shapes.  Numbering all the covered tiles would have given away the
+placement of the generators, and would have over-constrained the solution.
+Solving the levels would have been easy and boring.  By not giving away too much
 information, you leave the player guessing.  By not over-constraining the level,
 you also let the player solve the levels in different ways, and that makes it
-more interesting.  Although, you should try to make sure there are no *trivial*
+more interesting.  Although, you have to try to make sure there are no trivial
 solutions that you didn't think of.
 
 I handed these levels to Merwan, and he tried to solve them.  He got one very
@@ -202,40 +207,239 @@ another one, this time making sure it had a solution, and one that was not too
 obvious.  He solved it in around 1 minute.  At this point, we felt that the
 process of solving the levels was fun enough to go forward with this idea.
 
-We had not resolved the rules of the night portion of the levels, however.  We
-started by reducing the coverage of wind turbines and solar panels by half.
+### Solving the night conundrum
+
+An unresolved point were the rules of the night portion of the levels.  We
+really felt like we *had* to have the night in there, as it would make the game
+more unique.  But how exactly would that work?
+
+Maybe the houses you need to power would not be the same at night?  Maybe, some
+houses would only need power during the day, and some would need power during
+the night?  We felt that would make the puzzles hard to design.  As we wanted to
+display the day and night side-by-side, your generators would necessarily be in
+the same place on the plateau in both sides, otherwise you wouldn't be solving
+the same level, but really two separate levels.  So, we went for simple again,
+and the houses you need to power would have to be the same on each side.
+
+How to make the night interesting then?  We wanted to have a real interplay
+between the day and night portions: you would have to go back and forth to
+satisfy the constraints on both sides.  We needed to find a mechanism that would
+let you solve the day side, but you would need to refine your solution in order
+to solve the night side.  Solutions to the night side had to be a subset of the
+solutions for the day side.
+
+![sketch of night coverage for generators](/img/posts/ld39-paper-night-coverage.jpg)
+
+We started by reducing the coverage of wind turbines and solar panels by half.
 Now, we had to somehow overcome this power disparity between night and day.  We
 thought about adding a third power generator that would work only at night.
 What would be its coverage area?  We thought of a battery that would spread
 power to neighboring houses.  Maybe we could charge the battery in the day, and
-depending on the amount of charge, it would power that many houses?  But how
-would we decide *which* houses would be powered by the battery: it the battery
-has one unit of power, but two neighboring houses, which one is powered?  And
-more importantly, how to communicate that rule to the player?  Maybe the battery
-gives power to all the neighboring houses, regardless of its charge.  But then,
-it would make the day and night levels feel unconnected: you solve the day
-portion, then go to the night portion, put a battery or two, and you are done.
-We wanted to have a real interplay between the day and night portions: you would
-have to go back and forth to satisfy the constraints on both sides.  Maybe, the
-battery would need to be powered in the day?  That could work.  However, we did
-not design any level with the battery, as we weren't sure about how it would
-work, and if it would be interesting enough.
+depending on the amount of charge, it would power that many houses?  If two
+generators are powering it in the day, it provides two units power at night.
+But how would we decide *which* houses would be powered by the battery at night?
+If the battery has one unit of power, but two neighboring houses, which one is
+powered?  And more importantly, how to communicate that rule to the player?  We
+didn't know, so we changed it: what if the battery gives power to all the
+neighboring houses, regardless of its charge?  That would be less annoying, as
+you wouldn't have to care about the orientation of the battery.  The battery
+would still need to be powered during the day, but receiving one unit of power
+would be enough.  That made the day and night sides feel connected.
 
-It was already 4PM, so we elected to start coding rather than to keep designing
-in the dark.  Maybe better ideas would come once we had something in our hands.
+We did a quick check on the paper levels to see if the battery would still allow
+you to solve the levels we had.  It wasn't clear at this time whether the
+battery mechanism was interesting to play or not, but it was already 4PM, and we
+ought to start coding at some point.
 
-### Day 2:
+### Getting to a playable state
 
-INVENTORY
+We both felt that an isometric view would be right for the game, and a very good
+pretext to play with [THREE.js](https://threejs.org).  We threw together a
+skeleton made of THREE.js and Playground.js (though we didn't use much of the
+later in the end) and got to work.
 
-### Designing the levels
+I took care of the game logic: first a grid you could put things on.  Things
+would be consumers, generators or obstacles.  A consumer would just be a number:
+how many houses are on the tile.  A generator would have a coverage area, and we
+would use that coverage in order to validate the level configuration: make sure
+every consumer gets as many units of power as it requires.  Here is the first
+iteration of the level validation code:
 
+{% highlight js %}
 
-### Conclusion
+let counters = new Map();
+for (let th of this.things.keys())
+  if (th instanceof Consumer)
+    counters.set(th, 0);
 
-Do a LD, it's great to learn how to build something from start to finish.  One
-day you had nothing, three days later you have a game that people play and talk
-about.
+for (let th of this.things.keys())
+  if (th instanceof Generator)
+    // Let the generator add to the power counters
+    th.distributePower(this, counters);
+
+// Gather any mispowered (unpowered/overloaded) consumer,
+// with the current value
+let mispowered = [];
+for (let [counter, power] of counters.entries())
+  if (counter.size !== power)
+    mispowered.push({counter, current_power: power});
+
+// If there are no mispowered consumers, the level is solved!
+let solved = mispowered.length === 0;
+{% endhighlight %}
+
+I would revisit it later to have separate counters for the night as well, and to
+handle the case of the battery distributing power at night only when powered in
+the day.  But the principle remains the same.
+
+For editing the levels, I simply represented them as strings in a JS file:
+
+{% highlight js %}
+let LEVELS = [
+  {
+    generators: 'SS',
+    map: `....1.2...`,
+  },
+
+  {
+    generators: 'SSW',
+    map: `.....
+          .....
+          .221.
+          .2.1.
+          .....`,
+  },
+{% endhighlight %}
+
+For *YATM*, we had used the [Tiled][] editor, and while it had its downsides, it
+got the job done.  However, using an external editor, there is an extra
+export step that gets in the way when you need to design levels quickly.
+
+With the levels in a string, I just wrote a simple parser that emitted instances
+of the relevant objects according to the current character.  It made editing
+levels trivial, as I just had to change a few characters in a text editor and
+reload the game to immediately see the result.  This allowed me to iterate on
+the levels rather quickly on Day 3, when I put the bulk of the levels in the
+game.
+
+By the end of Day 1, we could load a level, move and place generators, and
+the game could tell us whether the level was solved or not, and which tiles were
+lacking power.  All of that in *the console*, not on the screen.  Merwan was in
+charge of everything visual (he has the credentials for that), but we didn't
+plug the view and the logic together until Day 2.
+
+### Adding the visuals
+
+Here are a few screenshots of the visual progress for the first two days:
+
+![collage of several iterations of the game visuals](/img/posts/ld39-collage1.png)
+
+Why are wind turbines floating in the air in the bottom two screenshots, you
+ask?  This is the inventory that we cut from the game.  If you look back to the
+level data higher up, you will see a `generators` line.  Initially, you were
+supposed to pick the generators from the inventory area before placing them on
+the plateau.  The code was a bit tricky to get right, as we needed to have a
+separate render pass just for the inventory, and specific picking code since the
+inventory would live in a separate world space.  Plus, we had extra logic for
+dealing with taking things from the inventory and putting them back in it.  But
+then, it occurred to me that we didn't *need* the inventory: we could just place
+the generators directly on the plateau, and the player would simply move them.
+It made the code simpler, and the game more intuitive!  I immediately told
+Merwan, who agreed it was the right call—but only after initially hating me for
+cutting the feature he had spent the last two hours working on.
+
+The lower-right screenshot shows the side-by-side day and night views working.
+It was a bit simpler than anticipated to get working (THREE.js
+had [example code][] for multiple views), but it was still tricky to get
+everything right.  At first, we thought about duplicating the day scene into a
+night scene and keep the two scenes in sync with the model.  Merwan suggested an
+alternative of rendering the same scene, but changing a few parameters on the
+fly.  For instance, lights could be toggled on and off, or switched directions
+before rendering the night scene, and reset before rendering the day scene.
+This worked nicely.
+
+The tricky part was rendering the coverage area of the generators, as they were
+actually different objects.  The feedback for powered houses would also
+necessarily be different in both scene, as a house could be powered at day but
+not receive any power at night.  We ended up rebuilding the coverage areas
+*every time* we set up the day or night scene, that is, at 120Hz.  That is
+grossly inefficient and keeps the garbage collector quite busy, but as we only
+show the coverage for the currently highlighted generator, it has been an issue
+in practice.  The feedback for powered house is less wasteful: it's simply a
+list of objects that we give to an outline pass; we update this list before
+rendering the day and night scenes.
+
+At the end of Day 2, we had something playable, although with only 5 levels, and
+the visual feedback was still rough.  We parted ways as Merwan had to travel
+back home, and we kept hacking on the game remotely with regular updates over
+the phone, right until the deadline.
+
+### Day 3: night levels and polish
+
+![second collage of several iterations of the game visuals](/img/posts/ld39-collage2.png)
+
+The last day was probably the longest as we stayed up right until the deadline
+to put everything we could in the game, and make a coherent whole.
+
+Merwan worked hard on making sure the rules of the games were intelligible
+through the visuals.  You can see in the collage above some iterations of the
+coverage areas and visual feedback for powered houses: from orange tiles
+signaling unpowered houses, to individual outlines around houses.
+
+He worked on visual polish: the dust particles when you plop a generator on the
+plateau, or making the day and night scene have a different feel, so it would be
+obvious to players that it was, in fact, the same plateau at different times of
+the day.  The sun and the moon were a nice touch on that front, but then the
+shadow directions were all wrong, and we had issues the moon coming in front of
+generators in the night scene.  We would have loved keeping them, but due to
+lack of time, he cut them and opted for a starry background instead.  He still
+took the time to put a *YATM* easter egg in the starts though!
+
+I spent the day making the level validation work for the night levels, as we
+settled on the exact behavior of the battery.  I then designed the night levels;
+we still had only one.  I aimed for 3 night levels, as I wasn't really sure I
+could stretch the idea without making the levels feel repetitive.  In the end, I
+managed to make quite a few levels more!  I then spent around two hours making
+the sound effects in [sfxr][] and the music in [Sunvox][].  I was quite
+satisfied with the music, as the end result was about what I had in mind when I
+started.
+
+When all of this was in, I asked [Marie][] play the game from start to finish,
+in order to get her first impressions.  Having a fresh set of eyes on the game
+is crucial, as there are things that are obvious to the developers who have been
+working on it from the start, but may not be to players who might not devote
+more than 5 minutes to the game.  Her feedback helped me nail down the level
+difficulty progression, and gave us a roadmap of things to improve in last hours
+of the jam.
+
+Ten minutes before the deadline, I hit the "Submit" button on the LD page.  We
+called each other on the phone to pat each other's back on a job well done.  We
+had made a game!
+
+### Aftermath
+
+It's a weird feeling, to know that three days earlier you had no clue of what
+your game would look like, or if you would even be able to get something fun
+working this time around.  But, three days later, we had a game we could show to
+colleagues and friends.  The feedback on
+the [LD page](https://ldjam.com/events/ludum-dare/39/bright-plateau) has also
+been overwhelmingly positive.  It's a great feeling!
+
+I would without a doubt recommend to anyone who has ever wanted to make a game,
+to participate in a game jam.  I feel that it is a good way to learn how it to
+focus your game design and coding efforts in order to make something playable
+and complete.  It forces you to relentlessly cut, cut and cut, until you have a
+core that is both fun enough *and* realizable.  This is quite different from the
+greenfield development of side projects.
+
+And even if you don't finish or submit your game, the experience itself is
+something that is worth going through, and it will create memories that you will
+gladly reminisce later down the road.  I know I will.
 
 [Merwan]: https://merwanachibet.net
 [Ludum Dare]: https://ldjam.com
+[Tiled]: http://www.mapeditor.org/
+[example code]: https://threejs.org/examples/?q=multiple#webgl_multiple_views
+[sfxr]: http://www.drpetter.se/project_sfxr.html
+[Sunvox]: http://www.warmplace.ru/soft/sunvox/
+[Marie]: https://github.com/Marie-Donnie
