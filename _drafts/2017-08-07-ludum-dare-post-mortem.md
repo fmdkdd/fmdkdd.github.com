@@ -20,10 +20,12 @@ In our timezone, the theme is announced at 3AM, in the night from Friday to
 Saturday.  Merwan arrived Friday evening and, after we exchanged pleasantries,
 we spent a few hours throwing ideas at each other, talking about games we liked,
 why we liked them, what we thought they were lacking.  I remember talking about
-simulations and tycoons.  These genres would come up again later.
+simulations and tycoons, and how they can double as fun games, but also as
+teaching tools for understanding complex systems.  These genres would come up
+again later.
 
-We went through the list of candidate themes, which at the
-time [was](https://ldjam.com/events/ludum-dare/39/theme/4):
+We went through the list of themes in the final voting round for this LD, which
+at the time [was](https://ldjam.com/events/ludum-dare/39/theme/4):
 
 > - Signal lost
 > - Parallel worlds
@@ -45,10 +47,10 @@ time [was](https://ldjam.com/events/ludum-dare/39/theme/4):
 We liked "Moving Fortress", "Parallel Worlds", "Running out of space", "On /
 Off", "Connections"; I remember discussing "You are not the main character" and
 concluding it was a dead-end, on the basis that any mechanism we could find
-would make the player-controlled character *the* main character for the player
-in the end.  We felt pretty good about "Running out of space" winning, but we
-did not cast our votes, as we didn't even have accounts to the new site at the
-time.
+would make the player-controlled character *the* main character in the eyes of
+the player in the end.  We felt pretty good about "Running out of space"
+winning, but we did not cast our votes, as we didn't even have accounts to the
+new LD site at the time.
 
 We then checked out a few of the top games from the last Ludum Dare for
 inspiration:
@@ -62,8 +64,8 @@ the theme to good effect, and summarized what we liked/disliked.
 
 I showed Merwan another LD game I had stumbled upon
 prior: [Twin Condition](https://jackrugile.com/twin-condition/).  I really liked
-the clean aesthetic, and the fact that you had to play both part of the levels
-differently, but at the same time:
+the clean aesthetic, the smooth animations, and the fact that you had to play
+both part of the levels differently, but at the same time:
 
 ![Twin Condition screenshot](/img/posts/twin-conditions.png)
 
@@ -74,8 +76,8 @@ graphics:
 
 ![Rezoner space prototype screenshot](/img/posts/spacesim-proto.png)
 
-Though it was not obvious to us at the time, in retrospect you can find
-influences from all of these sources in the final game.
+Though unbeknownst to us, you can trace influences from *Bright Plateau* back to
+these two games.
 
 Then it was already 1AM.  For our previous LD, we stayed up until the theme had
 been announced, started scribbling game ideas on paper, and went to bed only
@@ -91,7 +93,7 @@ We woke up at around 9AM to discover the winning theme:
 Well, we quickly skirted that one the night before, as it hadn't inspired
 anything to us.  But now the choice had been made.  We started throwing ideas:
 
-![paper with game ideas for the theme](/img/posts/ld39-ideas.png)
+![paper with game ideas for the theme](/img/posts/ld39-ideas.jpg)
 
 We quickly gravitated to the idea in lower right: "Puzzle based around the power
 grid".  Although at first it was much more elaborate than what we have now.
@@ -115,19 +117,22 @@ be designed around the item kept in its area.  In the end, we only had two
 areas, and zero boss.
 
 This time around, we agreed to focus our design in order to have a game that
-would feel whole.  Merwan argued that we could make the simulation, but would
-have no idea whether it's fun until we have something working and running.  By
-then, what if it's not?  Maybe we wouldn't have the time to throw it and design
-another game.  He pushed for simpler rules; less simulation, more puzzle.  What
-if instead of houses and plants, we had only houses?  What if, instead of money,
-you would have a simple goal: power all the houses?  What if, instead of a
-varying power distribution, we had only a binary state: on and off?
+would feel whole.  Merwan argued that we *could* go with the simulation idea,
+but we would have no idea whether it's fun to play until we get something
+running on the screen.  By then, what if it's not fun?  Maybe we wouldn't have the
+time to throw it away and design another game.  He pushed for simpler rules; less
+simulation, more puzzle.  What if instead of houses and plants, we had only
+houses?  What if, instead of money, you would have a simple goal: power all the
+houses?  What if, instead of a varying power distribution, we had only a binary
+state: on and off?
 
 We thought about how that would work.  You would put generators on the map to
 supply houses.  Each generator would supply power to all the houses in an area
 around it, but it would also have a fixed distribution in time.  So, for
 instance, the solar panel would power all the houses in a disc around it, but it
 would have a 50/50 distribution over 24 hours: 100% in daylight, 0% at night.
+
+![photo of generators distribution along time](/img/posts/ld39-power-distribution.jpg)
 
 We tried to play with the idea in our heads.  Would that be easy to understand?
 How would you play the game?  How would you visualize the constraint of
@@ -136,9 +141,9 @@ distribution was equivalent to a distribution in another spatial dimension.  So,
 instead of placing generators on a plane, you were really placing them in space.
 But how would that work, exactly?  Placing objects in space on a 2D screen is
 not the easy to grasp, even when accustomed.  Maybe display the time dimension
-below, like in [Shenzhen I/O](http://www.zachtronics.com/shenzhen-io/).
+below, like in [Shenzhen I/O](http://www.zachtronics.com/shenzhen-io/):
 
-![Shenzhen I/O screenshot]()
+![Shenzhen I/O screenshot](/img/posts/shenzhen-io.png)
 
 Merwan suggested to simplify, again.  What if, instead of 24 slices of a day, we
 had only two: one slice for the day, one for the night.  Then, we could show the
@@ -170,21 +175,23 @@ power a straight line, and the wind turbine would power its immediate neighbors
 while playing).  I cut small lines and crosses out of paper, and drew a few
 levels to get started:
 
-![paper prototype photo]()
+![photo of generators prototypes on paper](/img/posts/ld39-paper-generators.jpg)
+
+![photo of level prototypes on paper](/img/posts/ld39-paper-levels.jpg)
 
 The number represent the amount of houses you have to power.  Each generator
 provides 1 unit of power to each tile it covers, so you have to use multiple
-generators to supply power to tiles with 2 or more houses.  In designing these
-levels, I went for the simplest non-trivial configurations of lines and crosses
-I could find, then simply numbered *some* of the tiles covered by the shapes.
+generators to supply power to tiles with 2 or more houses.
 
-Numbering all the tiles would have given away the placement of the generators,
-and would have over-constrained the solution.  Solving the levels would have
-been easy and boring.  By not giving away too much information, you leave
-the player guessing.  By not over-constraining the level, you also let the
-player solve the levels in different ways, and that makes it more interesting.
-Although, you should try to make sure there are no *trivial* solutions that you
-didn't think of.
+In designing these levels, I went for the simplest non-trivial configurations of
+lines and crosses I could find, then simply numbered *some* of the tiles covered
+by the shapes.  Numbering all the tiles would have given away the placement of
+the generators, and would have over-constrained the solution.  Solving the
+levels would have been easy and boring.  By not giving away too much
+information, you leave the player guessing.  By not over-constraining the level,
+you also let the player solve the levels in different ways, and that makes it
+more interesting.  Although, you should try to make sure there are no *trivial*
+solutions that you didn't think of.
 
 I handed these levels to Merwan, and he tried to solve them.  He got one very
 quickly, and got stumped on another one.  "Are you sure there is a solution?" he
@@ -192,9 +199,8 @@ asked.  "I think so" I replied, and I thought: this is challenging, he looks
 like he is having fun!  Then I double-checked, and as it turned out, my level
 had no solution.  When I fixed it, he solved it quite easily.  I then made
 another one, this time making sure it had a solution, and one that was not too
-obvious.  He solved it in around 1 minute.  At this point, we agreed that the
-process of solving the levels was interesting enough to go forward with this
-idea.
+obvious.  He solved it in around 1 minute.  At this point, we felt that the
+process of solving the levels was fun enough to go forward with this idea.
 
 We had not resolved the rules of the night portion of the levels, however.  We
 started by reducing the coverage of wind turbines and solar panels by half.
@@ -225,6 +231,11 @@ INVENTORY
 ### Designing the levels
 
 
+### Conclusion
+
+Do a LD, it's great to learn how to build something from start to finish.  One
+day you had nothing, three days later you have a game that people play and talk
+about.
+
 [Merwan]: https://merwanachibet.net
 [Ludum Dare]: https://ldjam.com
-[Shenzhen I/O]:
