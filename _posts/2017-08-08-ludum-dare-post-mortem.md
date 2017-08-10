@@ -16,7 +16,7 @@ You can play *Bright Plateau* [right here](/ld39).  The rest of this post is a
 recollection of the 72 hours we spent making it, and contains minor spoilers
 (you should try the game first).
 
-### Warming-up
+### Day 0: Warming-up
 
 In our timezone, the theme is announced at 3AM, in the night from Friday to
 Saturday.  Merwan arrived Friday evening and, after we exchanged pleasantries,
@@ -94,7 +94,7 @@ been announced, started scribbling game ideas on paper, and went to bed only
 after we had nothing further to write down.  This time though, we elected to
 start off with a good night's sleep and to find out the theme in the morning.
 
-### Finding the game idea
+### Day 1: Finding the game idea
 
 We woke up at around 9AM to discover the winning theme:
 
@@ -335,7 +335,7 @@ lacking power.  All of that in *the console*, not on the screen.  Merwan was in
 charge of everything visual (he has the credentials for that), but we didn't
 plug the view and the logic together until Day 2.
 
-### Adding the visuals
+### Day 2: Adding the visuals
 
 Here are a few screenshots of the visual progress for the first two days:
 
