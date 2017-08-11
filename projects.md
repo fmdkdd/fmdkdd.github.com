@@ -41,7 +41,8 @@ start working on sound emulation.
 [Bright Plateau][], a short puzzle game made in 72 hours for the Ludum Dare 39
 jam, in duo with [merwaaan][].  You have to power up houses by placing
 generators on the plateau.  This time we went 3D with [THREE.js][], and,
-although exhausted, we were quite satisfied with how the game turned out.
+although exhausted, we were quite satisfied with how the game turned out.  I
+wrote a [post-mortem][] about it.
 
 <img src="img/projects/boyo.png" alt="boyo image">
 [boyo.js][], a GameBoy emulator in JavaScript made by [merwaaan][].  I
@@ -157,3 +158,4 @@ one-shots.
 [shinkoban]: https://github.com/fmdkdd/shinkoban
 [Bright Plateau]: /ld39/
 [THREE.js]: https://threejs.org/
+[post-mortem]: /2017/08/08/ludum-dare-post-mortem.html
