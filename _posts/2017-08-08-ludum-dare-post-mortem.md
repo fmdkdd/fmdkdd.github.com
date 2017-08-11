@@ -112,14 +112,14 @@ with.
 I remember pushing for a tycoon-like: there would be houses and plants to
 consume power, and you would buy and put power generators on the map to supply
 them.  The power consumers would have different consumption profiles: plants
-would need a lot of power with low downtime, while houses would be consume
-mostly in the day, but less at night.  The consumption would not be fixed, but
-could vary from house to house.  The generators would *also* produce a varying
-amount of power, depending on environmental conditions (wind for wind turbine,
-sunlight for solar panels), maintenance, efficiency...  You earned money by
-providing power to consumers.  Maybe this money would have been your score,
-maybe it would have allowed you to upgrade your generators.  You can make out
-some of that on the doodles above.
+would need a lot of power with low downtime, while houses would consume mostly
+in the day, but less at night.  The consumption would not be fixed, but could
+vary from house to house.  The generators would *also* produce a varying amount
+of power, depending on environmental conditions (wind for wind turbine, sunlight
+for solar panels), maintenance, efficiency...  You earned money by providing
+power to consumers.  Maybe this money would have been your score, maybe it would
+have allowed you to upgrade your generators.  You can make out some of that on
+the doodles above.
 
 With our previous game, we had learned that it was quite tempting to aim for a
 much larger game than we had the time budget (and ability) to build.  In *YATM*,
