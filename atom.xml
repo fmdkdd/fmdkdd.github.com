@@ -5,11 +5,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>fmdkdd</title>
-  <link href="http://fmdkdd.github.com/atom.xml" rel="self"/>
-  <link href="http://fmdkdd.github.com/"/>
+  <title>0xc0de</title>
+  <link href="http://0xc0de.fr/atom.xml" rel="self"/>
+  <link href="http://0xc0de.fr/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://fmdkdd.github.com/</id>
+  <id>http://0xc0de.fr/</id>
   <author>
 	 <name>Florent Marchand de Kerchove de Denterghem</name>
 	 <email>fmdkdd@0xc0de.fr</email>
@@ -18,9 +18,9 @@ layout: nil
   {% for post in site.posts %}
   <entry>
 	 <title>{{ post.title }}</title>
-	 <link href="http://fmdkdd.github.com{{ post.url }}"/>
+	 <link href="http://0xc0de.fr{{ post.url }}"/>
 	 <updated>{{ post.date | date_to_xmlschema }}</updated>
-	 <id>http://fmdkdd.github.com{{ post.id }}</id>
+	 <id>http://0xc0de.fr{{ post.id }}</id>
 	 <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
