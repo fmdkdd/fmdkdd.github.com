@@ -1,4 +1,4 @@
 markdown: kramdown
 highlighter: rouge
 
-exclude: [./utils, README.md, LICENSE]
+exclude: [./utils, README.md, LICENSE, Gemfile, Gemfile.lock, CNAME]
