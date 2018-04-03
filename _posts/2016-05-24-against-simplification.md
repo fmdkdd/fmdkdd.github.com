@@ -54,7 +54,7 @@ now you are seeing circles.
 Abstraction is a powerful tool.  Everything we know about a circle, we can apply
 to any object that has a circle shape, or contains a circle-shaped part.
 Instead of devising theories for each individual thing, we discover facts and
-solve problems for whole categories of things, at once.  Mathematics are a a
+solve problems for whole categories of things, at once.  Mathematics are a
 constant reminder of the power of thinking with abstractions.
 
 But abstractions are simplifications.  By abstracting, we strip the details, we
