@@ -7,7 +7,7 @@ title: Projects
   img {
     float: right;
     width: 10rem;
-	margin-left: .5rem;
+	margin-left: 1rem;
     margin-bottom: 2rem;
 	border-radius: .2rem;
     border: .25rem solid white;
@@ -34,7 +34,7 @@ programming languages, and is one of most-downloaded Emacs plugin on [MELPA][].
 [megado][], a MegaDrive emulator in C made by [merwaaan][].  It has nice
 debugging features, snapshots, and is starting to play quite a few games, though
 it's far from accurate.  I'm helping around with infrastructure: making it
-builds on Linux, continuous integration, sanitizers and the like.  I'm also
+build on Linux, continuous integration, sanitizers and the like.  I'm also
 working on emulating both sound chips.
 
 <a href="img/projects/ld39.png"><img src="img/projects/ld39.png" alt="ld39 image"></a>
@@ -84,9 +84,10 @@ part of the competition.  It started as a minimalist action-RPG, but I had too
 much fun and added homemade pixel art and sound effects.  Now it's neither
 minimalist, nor particularly fun.  Still had a good time making it.
 
-[webppm][], a PPM viewer for the web.  Drag and drop a PPM file, use the slider
-to zoom.  Made for my students after I couldn't find a decent multi-platform PPM
-viewer.
+<img src="img/projects/webppm.png" alt="webppm screenshot">
+[webppm][], a [NetPBM][] viewer for the web.  Drag and drop a PPM file, use the
+slider to zoom.  Made for my students after I couldn't find a decent
+multi-platform PPM viewer.
 
 <img src="img/projects/s3c.png" alt="s3c image">
 [s3c][], a JavaScript editor with code evaluation built for the students of the
@@ -150,6 +151,7 @@ one-shots.
 [Laby-o-matic]: https://github.com/fmdkdd/laby-o-matic
 [bump]: /bump/
 [webppm]: /webppm/
+[NetPBM]: http://netpbm.sourceforge.net/
 [boyo.js]: https://merwaaan.github.io/boyo.js/
 [megado]: https://github.com/merwaaan/megado
 [gbs]: https://github.com/fmdkdd/gbs
