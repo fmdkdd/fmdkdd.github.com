@@ -32,10 +32,10 @@ programming languages, and is one of most-downloaded Emacs plugin on [MELPA][].
 
 <a href="img/projects/megado.png"><img src="img/projects/megado.png" alt="megado image"></a>
 [megado][], a MegaDrive emulator in C made by [merwaaan][].  It has nice
-debugging features, snapshots, and is starting to play quite a few games, albeit
-with glitches.  I'm helping around with infrastructure: making it builds on
-Linux, continuous integration, sanitizers and the like.  At some point I should
-start working on sound emulation.
+debugging features, snapshots, and is starting to play quite a few games, though
+it's far from accurate.  I'm helping around with infrastructure: making it
+builds on Linux, continuous integration, sanitizers and the like.  I'm also
+working on emulating both sound chips.
 
 <a href="img/projects/ld39.png"><img src="img/projects/ld39.png" alt="ld39 image"></a>
 [Bright Plateau][], a short puzzle game made in 72 hours for the Ludum Dare 39
