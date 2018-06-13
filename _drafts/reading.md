@@ -1,3 +1,9 @@
+---
+layout: post
+title: On Reading
+---
+
+
 For the longest time, I believed that reading a book would make me smarter.  The
 reasoning might have went a little like this:
 
@@ -6,57 +12,60 @@ reasoning might have went a little like this:
 3. reading their prose is like drinking smart-full nutrients;
 4. like absorbed nutrients fuel my body, absorbing words with my eyes fuels my
    brain;
-5. thus, reading their words makes me smarter.
-
-QED.
+5. thus, reading their words makes me smarter.  QED.
 
 Now, you might object to assumptions #1 and #2, and, in an all my *naïveté*, I
 *was* aware that these did not hold for all litterature known to mankind.  Or
 rather, I suspected that books came in varying levels of quality, which in turn
-translated into more or less efficient knowledge absorption.  To keep the
-culinary analogy going, some books were like fast-food: cheap and full of fat
-sugars to give you a short but high thrill, while others were more like
-*féculents*: less thrilling, but more fulfilling for a day's work.  In a sane
-diet, you want less of the former, and more of the latter; I wanted a sane
-*reading* diet.  *Corpore sano*.
+meant various amount of knowledge to absorb.  To keep the culinary analogy
+going, some books are like fast-food: cheap and full of saturated fat and sugars
+to give you a short but potent high, while others are more like *légumes*: less
+thrilling, but more nutritious.  In a healthy diet, you want less of the former,
+and more of the latter.  *Mens sana in corpore sano* calls for a healthy
+*reading* diet.
 
-A quick back-of-the-envelope calculation shows that the number of books one can
-reasonably manage to read in a lifetime has been eclipsed by the number of books
-in circulation has surpassed somewhere around ... three centuries ago.  Clearly,
-in order to quench my thirst of knowledge, I would need to devise a system to
-part the wheat from the chaff.
+A [quick back-of-the-envelope calculation](https://what-if.xkcd.com/76/) shows
+that the number of books one can reasonably manage to read in a lifetime has
+been eclipsed by the number of books in circulation since around ... five
+centuries ago.  Clearly, in my eternal quest of wisdom, I would need to devise a
+system to part the wheat from the chaff.
 
 From an early age, I caught on that *recommendations* were an effective
 solution.  I have a simple formula: the likelihood of me reading a book is
 proportional to the number of times that book was recommended to me (directly by
 a friend, or indirectly through word of mouth), weighted by the area of overlap
-between the source of the recommendation's center of interests and mine.  In
-other words, if we both are passionate about waffles, and there's this book you
-just read that's all about waffology, then the likelihood of me finding a copy
-to read it is very high.  On the other hand, if we have nothing in common, then
-chances are low that I will get out of my way to find that copy of "All About
-Sophie" you keep raving about.  Of course, other factors may come into play, and
-I do not actually carry out calculations to rank books that were recommended to
-me in order to pick one to read.  But as a rule of them, I do get good mileage
-out of this formula, even when applied to other things like films, videogames
-and music.
+between the recommender's interests and mine.  In other words, if we both are
+passionate about waffles, and there's this book on Belgian wafflology after the
+first World War, then the likelihood of me finding a copy to read is very high.
+On the other hand, if we have diverging interests, then chances are low that I
+will get out of my way to find that copy of *All About Sophie* you keep raving
+about.  But I keep hearing about it, there might be something to it after all.
+Of course, other factors come into play, and I do not actually carry out
+calculations to rank books that were recommended to me in order to pick one to
+read.  But even loosely applied, I do get good mileage out of this formula; and
+it can be extended to other media like films, videogames and music.
 
-A second point is the nature of the book itself.  Some books have explicit
-pedagological value: textbooks, scientific articles, encyclopedias, user manuals
-and the like.  It is easy to see how one could want to "download" all their
-factual contents directly into one's brain.  Other kinds of books, like fiction,
-have a different value proposition: they primarily entertain you with a gripping
-story.  One may then question the usefulness of cramming one's head with the
-intricacies of Bridget Jones' failings at finding love.  Aside from the trivial
-observation that, yes, sometimes, it is *good* to be entertained, even by
-clichés, I'd argue that even fictional writings may hold valuable insights,
-often in the form of analogies.  Roman and Greek mythology is rife with
-relatable situations; reading these is enriching an arsenal of anecdotes, one
-for each situation.
+Also of importance is the nature of the book.  Some books have explicit
+pedagological value: textbooks, scientific articles, historic treaties,
+encyclopedias, user manuals and the like.  It is easy to see how one could want
+to download all their factual contents directly into one's brain.  Other kinds
+of books, like fiction, have a different value proposition: they primarily
+entertain you with a gripping story.  One may then question the utilify of
+cramming one's head with the intricacies of Bridget Jones' failings at finding
+love.  Aside from the trivial observation that, yes, sometimes, it *is* good to
+be entertained, even by clichés, I'd argue that even fictional writings may hold
+valuable insights.  Powerful stories can often be used in daily conversations to
+draw one's point home more vividly.  Greek mythology is rife with characters
+whose actions gave us useful analogies and even common words: Odysseus' sirens,
+Icarus' flight, Tantalus' punishment, Narcissus' fatal narcissism, Sisyphus'
+sisyphean plight, *etc.*
 
-Now, once with the question of selecting books worth to read for their knowledge
-out of the way, I want to touch on the *consequences* that the belief I opened
-with brings about.
+All of that to say that while I favor reading technical books because they will
+more often hold actionable knowledge, other literary pursuits may still be
+worthwhile for expanding my horizons, or even just for fun.
+
+Now, having acquired countless books to absorb knowledge from, I want to touch
+on the *consequences* brought about by that forementioned belief.
 
 - I read books from front to back, without missing a letter.  Footnotes and
   back-cover blurb included.  I was once appalled at a fellow student who
@@ -65,6 +74,7 @@ with brings about.
   jewel of knowledge* at the turn of a sentence.  Like gold searchers
   (aurosomethings?), I carefully sieved through each page, in search of nuggets
   of wisdoms.
+
 - This lead into an unhealthy fixation on *quotes*.  I got a quote dictionary:
   that's a book with quotes for every word.  Wisdom for every situation!  Each
   quote was seemingly very profound, solemnous in its brevity—the shorter the

@@ -18,7 +18,7 @@ html {
 body {
   font-family: serif;
 
-  color: #333;
+  color: #222;
   background-color: white;
 }
 
@@ -38,15 +38,15 @@ h2 a {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 22px;
 }
 
 code {
-  font-size: 0.7rem;
+  font-size: 14px;
 }
 
 time {
@@ -66,7 +66,7 @@ time {
 /** Content **/
 
 .main {
-  font-size: 0.8rem;
+  font-size: 16px;
   max-width: 31rem;
   margin: 0 auto;
   padding-left: 1rem;
@@ -83,13 +83,7 @@ time {
 }
 
 .main ul li {
-  list-style-type: none;
-  text-indent: -1rem;
-}
-
-.main ul li:before {
-  content: '◊';
-  margin-right: .5rem;
+  list-style-type: '◊  ';
 }
 
 .main ul li, ol li {
