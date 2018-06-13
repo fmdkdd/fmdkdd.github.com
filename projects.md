@@ -50,6 +50,7 @@ implemented the audio emulation, improved the performance so that it would run
 decently in Firefox and Chrome, and helped with miscellanea.  I love hearing the
 intro to Link's Awakening on it.
 
+<img src="img/projects/gbs.png" alt="GBS sound wave">
 [gbs][], a GameBoy Sound player written in Rust.  My first attempt at GameBoy
 audio emulation for [boyo.js][] was a mess, and I started from scratch in Rust.
 Once I got it working there, I ported it to JS.  It's not an actual player: it
