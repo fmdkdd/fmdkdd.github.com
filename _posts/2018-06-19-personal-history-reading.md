@@ -94,8 +94,8 @@ hold valuable insights.  Stories have a way of making a mark in our collective
 imagery, and their characters can often be used in daily conversations to draw
 one's point home more vividly.  Greek mythology is rife with figures whose
 actions gave us useful analogies and even common words: Odysseus' sirens,
-Icarus' flight, Tantalus' punishment, Narcissus' fatal narcissism, Sisyphus'
-Sisyphean plight, *etc.*
+Icarus' flight, Tantalus' punishment, Narcissus' fatal narcissism, [Sisyphus'
+Sisyphean plight][sisyphus], *etc.*
 
 All of that to say that while I favor reading technical books because they will
 more often hold actionable knowledge, other literary pursuits may still be
@@ -280,3 +280,4 @@ yet, we are only ever catching glimpses of the full picture.
 [cheeky-quote]: /phd-manuscript/#variations
 [the-book]: https://en.wikipedia.org/wiki/Junior_Woodchucks#Junior_Woodchucks'_Guidebook
 [alexandria]: https://en.wikipedia.org/wiki/Guardians_of_the_Lost_Library
+[sisyphus]: http://existentialcomics.com/comic/29
