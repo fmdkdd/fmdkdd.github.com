@@ -183,27 +183,23 @@ html {
 }
 
 @media (max-width: 680px) {
-  html {
-    font-size: 15pt;
-  }
+  html { font-size: 15pt; }
+  .main { font-size: 15px; }
 }
 
 @media (max-width: 620px) {
-  html {
-    font-size: 14pt;
-  }
+  html { font-size: 14pt; }
+  .main { font-size: 14px; }
 }
 
 @media (max-width: 580px) {
-  html {
-    font-size: 13pt;
-  }
+  html { font-size: 13pt; }
+  .main { font-size: 13px; }
 }
 
 @media (max-width: 540px) {
-  html {
-    font-size: 12pt;
-  }
+  html { font-size: 12pt; }
+  .main { font-size: 12px; }
 }
 
 @media (max-width: 490px) {
