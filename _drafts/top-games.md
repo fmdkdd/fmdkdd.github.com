@@ -63,5 +63,7 @@ getting good at them will have these side effects.
 - Creatures is in a unique game space.  It has very interesting systems, but it
   doesn't teach you much though.
 
+- Tetris!
+
 I'm not talking about: games that are important historically, or games that are
 excellent experiences.  I'm more interested in systems than in stories.
