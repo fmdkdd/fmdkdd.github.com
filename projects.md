@@ -30,6 +30,11 @@ diagnostics in the buffer.  I've been helping around as a co-maintainer since
 the original author's departure.  It has support for over 40 different
 programming languages, and is one of most-downloaded Emacs plugin on [MELPA][].
 
+<img src="img/projects/ld43.png" alt="ld43 image"> [QUELTRIS][], our (with
+[merwaaan][]) Ludum Dare 43 jam entry.  A mashup between match-3 and Tetris
+where you arrange believers in patterns to quench the thirst of your impatient
+South-American god.  I wrote about the [design decisions][] behind it.
+
 <a href="img/projects/megado.png"><img src="img/projects/megado.png" alt="megado image"></a>
 [megado][], a MegaDrive emulator in C made by [merwaaan][].  It has nice
 debugging features, snapshots, and is starting to play quite a few games, though
@@ -162,3 +167,5 @@ one-shots.
 [Bright Plateau]: /ld39/
 [THREE.js]: https://threejs.org/
 [post-mortem]: /2017/08/08/ludum-dare-post-mortem.html
+[QUELTRIS]: /ld43/
+[design decisions]: /2018/12/21/ld43-post-mortem.html
