@@ -61,7 +61,7 @@ In that case, the elegant compromise would have been to choose a
 [1]: http://www.python.org/doc/essays/foreword/
 [2]: http://docs.python.org/tutorial/controlflow.html#keyword-arguments
 [3]: http://www.python.org/
-[5]: http://www.python.org/pics/pythonHi.gif
+[5]: https://upload.wikimedia.org/wikipedia/commons/7/72/Python_logo_1990s.svg
 [4]: http://www.computerworld.com.au/article/255835/a-z_programming_languages_python/
 [6]: http://oreilly.com/
 [7]: http://pythonline.com/youtube_archive/parrot-sketch
