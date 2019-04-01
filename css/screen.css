@@ -33,6 +33,11 @@ a:hover {
   color: #E94E77;
 }
 
+*:focus {
+  color: #E94E77;
+  outline: 2px solid #E94E77;
+}
+
 h2 a {
   border-bottom: none;
 }
@@ -130,7 +135,7 @@ h1 {
   bottom: -1px;
 }
 
-h1 a:hover {
+h1 a:hover, h1 a:focus {
   color: inherit;
 }
 
@@ -166,14 +171,6 @@ h1 a:hover {
 
 #nav_menu a {
   border: none;
-}
-
-#nav_menu .icon {
-  fill: #AA867C;
-}
-
-#nav_menu a:hover .icon {
-  fill: #E94E77;
 }
 
 /** Responsive **/
