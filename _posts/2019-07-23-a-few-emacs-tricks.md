@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Some Emacs Tricks
+title: A Few Emacs Tricks
 highlight: yes
 ---
 
@@ -29,8 +29,6 @@ mostly straightforward, but it turns out that Chromium requires to be in focus
 to be reloaded, whereas Firefox does not, so the script has to handle that as
 well.
 
-**ADD GIF**
-
 ### One sentence per line for editing shared LaTeX
 
 I usually write text with `auto-fill-mode`, which wraps lines at 80 characters
@@ -51,11 +49,9 @@ Unfortunately, not everyone has recognized that the double space is the superior
 form, so `ospl` assumes you use a single space, and avoids breaking after common
 acronyms, which makes it slightly more complex than it should be.
 
-**ADD GIF**
-
 ### Preview definitions when editing assembly
 
-Lately I'be been dabbling in 6502 assembly, and when navigating code, I often
+Lately I've been dabbling in 6502 assembly, and when navigating code, I often
 found the need to look at the definition for the label under point.  So I wrote
 an xref backend for assembly ([`xref-asm.el`][]), so that I could jump to the
 definition and back using the standard keybindings.  But for most labels, I
@@ -66,15 +62,18 @@ So I wrote [`xref-posframe.el`][], another package which *previews* the
 definition using `posframe`.  Posframe lets you create one-shot Emacs frames
 without window decorations, which is more convenient and configurable than
 overlays for displaying stuff on top of the current buffer, but still fast
-enough to be usable.  With xref-posframe, I can preview a definition, and jump
-to if hit the keybinding a second time:
+enough to be usable.  With xref-posframe, I can preview a definition in one
+key:
 
-**ADD GIF**
-[]
+<video autoplay loop>
+  <source src="/img/posts/xref-asm.webm" type="video/webm">
+</video>
 
-It's works everywhere xref is supported too, not just for assembly.
+Pressing the key a second time, I can even jump to the definition.
 
-### Highlight `TODO` keywords
+And it works everywhere xref is supported, not just for assembly.
+
+### Highlight TODO keywords
 
 This one is pretty simple.  I want keywords in comments like `TODO:` and
 `FIXME:` to use a custom font, so I can see them pop out at me, screaming to be
@@ -89,7 +88,7 @@ fixed.  This can be done by adding keywords to font lock:
 (add-hook 'prog-mode-hook #'add-watchwords)
 ```
 
-**ADD SCREEN**
+![Rust snippet with a TODO keyword in a comment highlighted in bold](/img/posts/todo-highlight.png)
 
 This method has one drawback: it highlights these words *anywhere* they appear
 in a programming buffer, even outside of comments.  There are complex packages
@@ -123,7 +122,7 @@ and `optipng' to reduce the file size if the program is present."
     (make-directory (file-name-directory file) 'parents)
     ;; Still, make sure to signal if the screenshot was in fact not created
     (unless (= 0 (call-process "import" nil nil nil file))
-      (user-error "`import' failed to create screenshot %s" "bla"))
+      (user-error "`import' failed to create screenshot %s" file))
     (if (executable-find "optipng")
         (start-process "optipng" nil "optipng" file))
     (insert
@@ -139,12 +138,6 @@ This snippet asks for a filename, then calls `import` to select just the area I
 want to screenshot, saves it and then insert an org-format image link at point.
 In org-mode, it redisplays inline images so I can see the result right away.  If
 `optipng` is installed, it even compresses the screenshot to save space.
-
-**ADD GIF**
-
-### Capture GIFS?
-
-TODO TODO
 
 ### Insert, delete or change delimiters
 
@@ -181,12 +174,10 @@ he|re (is) a list
 
 If you want clever behavior, you should look elsewhere.
 
-**ADD GIF**
-
 ### Auto-revert without the lag
 
 Just yesterday I wanted to explore the assembly output of GCC for some simple C
-file.  I openened two windows: one with the C code, and one with the output
+file.  I opened two windows: one with the C code, and one with the output
 assembly.  I put the latter in `auto-revert-mode` so I could quickly see the
 result after recompilation.
 
@@ -194,19 +185,15 @@ Turns out, `auto-revert-mode` had some weird lag on my machine, where it could
 take a few seconds to revert the buffer so I could see the result.  Opening a
 terminal with `watch -n 0.1 cat a.s` was better.
 
-**ADD GIF**
-
 I wrote a small minor mode that reverts the buffer after getting change events
 from `inotify`, and it was constantly instantaneous.
-
-**ADD GIF**
 
 Later, I checked out the source to `auto-revert-mode`, and found that it does
 more or less the same as my minor mode, using `filenotify` watchers first, and
 falling back on polling if filenotify isn't supported or fails.  Yet, it can
 still take seconds to refresh whereas my minor mode just works.
 
-If you have the same issue with `auto-revert-mode`, you may try
+If you have the same issue with `auto-revert-mode`, you may want to try
 [`inotify-revert.el`][].
 
 
