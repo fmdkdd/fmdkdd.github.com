@@ -184,7 +184,7 @@ OO.
 O.O
 ```
 
-But it turns out that a discconnected pattern like this is harder to recognize
+But it turns out that a disconnected pattern like this is harder to recognize
 on the board.  It also made sense to have shapes with the same number of
 squares, in order to make sure they have the same probability being assembled on
 the grid.  This also cut down on the possibilities.  In the end, the game leans
