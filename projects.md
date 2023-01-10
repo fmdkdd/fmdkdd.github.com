@@ -28,6 +28,18 @@ title: Projects
 Here are few things I have made or have contributed to.  They are roughly in
 reverse chronological order of involvement.
 
+<img class"img" src="img/projects/harvesters.png" alt="Harvesters From Outer Space image">
+[Harvesters From Outer Space][], a UFO-catcher game for the Ludum Dare 52 jam by
+[merwaaan][] and I.  Featuring our signature move of using a physics engine for
+arcade games (after [You are the Münster][]).  A short one, albeit with a great
+cheesy-50's-sci-fi-movies look, satisfying ship movement, and cows.
+
+<img class="img" src="img/projects/neonwise.png" alt="NEONWISE'89 image">
+[NEONWISE'89][], a laconic wire buzz game made for the Ludum Dare 47 jam with
+the ever-talented [merwaaan][].  It's a bit hard, as I enjoyed designing tight
+passages and devious traps maybe a little too much.  The late 80's aesthetic and
+moody track play well with the frustration though.
+
 <img class="img" src="img/projects/flycheck.png" alt="flycheck logo">
 [flycheck][], a GNU Emacs plugin for syntax-checking code and reporting
 diagnostics in the buffer.  I've been helping around as a co-maintainer since
@@ -173,3 +185,5 @@ one-shots.
 [post-mortem]: /2017/08/08/ludum-dare-post-mortem.html
 [QUELTRIS]: /ld43/
 [design decisions]: /2018/12/21/ld43-post-mortem.html
+[NEONWISE'89]: /ld47/
+[Harvesters From Outer Space]: https://merwaaan.github.io/ld52/
