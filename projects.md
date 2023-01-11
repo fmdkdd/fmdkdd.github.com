@@ -28,7 +28,7 @@ title: Projects
 Here are few things I have made or have contributed to.  They are roughly in
 reverse chronological order of involvement.
 
-<img class"img" src="img/projects/harvesters.png" alt="Harvesters From Outer Space image">
+<img class="img" src="img/projects/harvesters.png" alt="Harvesters From Outer Space image">
 [Harvesters From Outer Space][], a UFO-catcher game for the Ludum Dare 52 jam by
 [merwaaan][] and I.  Featuring our signature move of using a physics engine for
 arcade games (after [You are the Münster][]).  A short one, albeit with a great
